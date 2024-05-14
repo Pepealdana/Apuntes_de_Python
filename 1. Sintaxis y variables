@@ -19,8 +19,10 @@
 # Para agregar un enlace a un sitio web del lenguaje, usamos la siguiente forma:
 # https://www.python.org/
 
-¿QUÉ INFORMACIÓN SE MANEJA?
+¿QUÉ TIPOS DE DATOS PUEDO TRABAJAR?
 1.3 VARIABLES Y CONSTANTES
+
+Inicialmente trabajaremos los siguientes:
 
 # int (tipo entero)
 edad = 33
@@ -31,6 +33,6 @@ Resucita = True
 # boolean: false
 muerto = False
 # string (tipo cadena de datos)
-ciudad = "Jesús de Nazareth"
+personaje = "Jesús de Nazareth"
 
-# Hay más datos, por ahora solo eso.
+# Se puede complementar más. PRÓXIMAMENTE. 
