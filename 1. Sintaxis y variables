@@ -1,11 +1,11 @@
-#
-# Sitio web del lenguaje:
-# https://www.python.org/
+¿POR DÓNDE INICIO?
+01. SINTAXIS
+#La SINTAXIS es el correcto uso y orden de las palabras que utilizamos para comunicarnos, reglas que definen como se tiene que escribir el código.
 
+1.1 COMENTARIOS
+#Los COMENTARIOS permiten escribir o aclarar partes del código, sin que afecte el resultado final. Se inicia con #.
 
-# Formas de elaborar comentarios
-
-# Comentario de línea
+# Comentario en una sola línea
 
 '''
   Comentario multilínea
@@ -15,9 +15,12 @@
   Esto también es un 
   comentario multilínea
 """
+1.2 ENLACES
+# Para agregar un enlace a un sitio web del lenguaje, usamos la siguiente forma:
+# https://www.python.org/
 
-
-# Variable y constante
+¿CÓMO AGRAGAR INFORMACIÓN?
+1.3 VARIABLES Y CONSTANTES
 
 nombre = 'César'
 GENERO = 'MASCULINO' # Constante por convención
