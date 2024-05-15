@@ -15,7 +15,7 @@ print("x+y =", x+y)   #13 suma
 print("x-y =", x-y)   #7 resta
 print("x*y =", x*y)   #30 multiplicación 
 print("x/y =", x/y)   #3.3333333333333335 división
-print("x%y =", x%y)   #1 módulo
+print("x%y =", x%y)   #1 módulo (redondea decimales a enteros)
 print("x**y =", x**y) #1000 exponente
 print("x//y =", x//y) #3 cociente
 
