@@ -1,18 +1,18 @@
 ¿POR DÓNDE INICIO?
-01. SINTAXIS
+1. SINTAXIS
 #La SINTAXIS es el correcto uso y orden de las palabras que utilizamos para comunicarnos, reglas que definen como se tiene que escribir el código.
 
 1.1 COMENTARIOS
 #Los COMENTARIOS permiten escribir o aclarar partes del código, sin que afecte el resultado final. Se inicia con #.
 
-# Comentario en una sola línea
+# Ejemplo de un Comentario en una sola línea.
 
 '''
-  Comentario multilínea
+  De esta forma se realizan los comentarios multilínea.
 ''' 
 
 """
-  Esto también es un 
+  Esta forma también es un 
   comentario multilínea
 """
 1.2 ENLACES
@@ -35,4 +35,4 @@ muerto = False
 # string (tipo cadena de datos)
 personaje = "Jesús de Nazareth"
 
-# Se puede complementar más. PRÓXIMAMENTE. 
+# Se puede encontar otros tipos de datos trabajados en Python, por ahora solo nos enfocamos en los anteriores.
