@@ -30,13 +30,38 @@ multiplicacion = x * y
 print(multiplicacion)
 # Módulo
 modulo = x % y
+'''El operador % realiza la operación módulo entre los números presentes a la izquierda y la derecha. 
+Se trata de calcular el resto de la división entera entre ambos números.
+Es decir, si dividimos 10 entre 3, el cociente sería 3 y el resto 1. Ese resto es lo que calcula el módulo.'''
 print(modulo)
 # Exponente
 exponente = x ** y
 print(exponente)
-# Division Entera (no da residuo)
-division_entera = x // y
-print(division_entera)
+
+# 2.1.1 ORDEN DE APLICACIÓN
+'''En los ejemplos anteriores simplemente hemos aplicado un operador a dos números sin mezclarlos entre ellos.
+También es posible tener varios operadores en la misma línea de código, 
+y en este caso es muy importante tener en cuenta las prioridades de cada operador y cual se aplica primero.
+Ante la duda siempre podemos usar paréntesis, ya que todo lo que está dentro de un paréntesis se evaluará conjuntamente, 
+pero es importante saber las prioridades.
+
+El orden de prioridad sería el siguiente para los operadores aritméticos, siendo el primero el de mayor prioridad:
+
+() Paréntesis
+** Exponente
+-x Negación
+* / // Multiplicación, División, Cociente, Módulo
++ - Suma, Resta'''
+
+#EJEMPLO:
+print(10*(5+3)) # Con paréntesis se realiza primero la suma
+# 80
+print(10*5+3)   # Sin paréntesis se realiza primero la multiplicación
+# 53
+print(3*3+2/5+5%4) # Primero se multiplica y divide, después se suma
+#10.4
+print(-2**4)       # Primero se hace la potencia, después se aplica el signo
+#-16
 
 # 2.2. OPERADORES DE COMPARACIÓN 
 
