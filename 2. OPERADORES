@@ -1,34 +1,44 @@
-#2. ¿QUÉ ES UN OPERADOR EN PYTHON?
+#¿QUÉ ES UN OPERADOR EN PYTHON?
 """los operadores son símbolos o palabras que se utilizan para realizar operaciones con determinados valores o variables. 
 Permiten hacer cálculos, comparaciones y obtener resultados booleanos, y son útiles para realizar “atajos” y ahorrarse varias líneas de código."""
 
-# 2.1. TIPOS DE OPERADORES
+# 2. TIPOS DE OPERADORES
 
-# 2.1.1. OPERADORES ARITMÉTICOS:
+# 2.1. OPERADORES ARITMÉTICOS:
+'''Los operadores aritméticos o arithmetic operators son los más comunes que nos podemos encontrar, 
+y nos permiten realizar operaciones aritméticas sencillas, como pueden ser la suma, resta o exponente.'''
+
+#EJEMPLO:
+x = 10; y = 3
+print("Operadores aritméticos")
+print("x+y =", x+y)   #13 suma
+print("x-y =", x-y)   #7 resta
+print("x*y =", x*y)   #30 multiplicación 
+print("x/y =", x/y)   #3.3333333333333335 división
+print("x%y =", x%y)   #1 módulo
+print("x**y =", x**y) #1000 exponente
+print("x//y =", x//y) #3 cociente
 
 # Suma
-suma = 4 + 5
+suma = x + y
 print(suma)
 # Resta
-resta = 9 - 3
+resta = x - y
 print(resta)
 # Multiplicacion
-multiplicacion = 5 * 6
+multiplicacion = x * y
 print(multiplicacion)
-# Division
-division = 20 % 5
-print(division)
-# Modulo
-modulo = 20 % 2
+# Módulo
+modulo = x % y
 print(modulo)
 # Exponente
-exponente = 4 ** 2
+exponente = x ** y
 print(exponente)
-# Division Baja o Division Entera
-division_baja = 5 // 2
-print(division_baja)
+# Division Entera (no da residuo)
+division_entera = x // y
+print(division_entera)
 
-# Operadores de comparacion: >, <, ==, >=, <=, !=
+# 2.2. OPERADORES DE COMPARACIÓN 
 
 # > (Mayor que)
 print(30 > 10) # True
@@ -43,8 +53,7 @@ print(20 <= 30) # True
 # != (No Igual que)
 print(20 != 200) # True
 
-
-# Operadores Logicos: and, or, not
+# 2.3. OPERADORES LÓGICOS 
 
 # and
 print(40 > 10 and "hola" == "Hola".lower()) # Imprime True, ya que las dos condiciones son verdaderas
