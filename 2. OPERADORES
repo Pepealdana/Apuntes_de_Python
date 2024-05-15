@@ -1,4 +1,10 @@
-# Operadores Aritmeticos:
+#2. ¿QUÉ ES UN OPERADOR EN PYTHON?
+"""los operadores son símbolos o palabras que se utilizan para realizar operaciones con determinados valores o variables. 
+Permiten hacer cálculos, comparaciones y obtener resultados booleanos, y son útiles para realizar “atajos” y ahorrarse varias líneas de código."""
+
+# 2.1. TIPOS DE OPERADORES
+
+# 2.1.1. OPERADORES ARITMÉTICOS:
 
 # Suma
 suma = 4 + 5
