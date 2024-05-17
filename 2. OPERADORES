@@ -1,6 +1,8 @@
 #¿QUÉ ES UN OPERADOR EN PYTHON?
-"""los operadores son símbolos o palabras que se utilizan para realizar operaciones con determinados valores o variables. 
-Permiten hacer cálculos, comparaciones y obtener resultados booleanos, y son útiles para realizar “atajos” y ahorrarse varias líneas de código."""
+"""los operadores son símbolos o palabras que se utilizan para realizar 
+operaciones con determinados valores o variables. 
+Permiten hacer cálculos, comparaciones y obtener resultados booleanos, 
+y son útiles para realizar “atajos” y ahorrarse varias líneas de código."""
 
 # 2. TIPOS DE OPERADORES
 
@@ -8,26 +10,10 @@ Permiten hacer cálculos, comparaciones y obtener resultados booleanos, y son ú
 '''Los operadores aritméticos o arithmetic operators son los más comunes que nos podemos encontrar, 
 y nos permiten realizar operaciones aritméticas sencillas, como pueden ser la suma, resta o exponente.'''
 
-#ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# TODAS LAS ACTIVIDADES VAN ANOTADAS EN EL CUADERNO DE APUNTES
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 x = 10; y = 3
-print("Operadores aritméticos")
-print("x+y =", x+y)   # resultado 13 suma
-print("x-y =", x-y)   # resultado 7 resta
-print("x*y =", x*y)   # resultado 30 multiplicación 
-print("x/y =", x/y)   # resultado 3.3333333333333335 división
-print("x%y =", x%y)   # resultado 1 módulo (redondea decimales a enteros)
-print("x**y =", x**y) # resultado 1000 exponente
-print("x//y =", x//y) # resultado 3 cociente
-
-#ACTIVIDAD 2:
-#¿Qué aparece en la terminal al darle ejecutar? ¿Y si borro print?
-#¿Escribe con tus palabras que lo que sucede?
-
-# NOTA: USO DE LA FUNCIÓN PRINT
-'''La función print() en Python es una función incorporada que se utiliza para mostrar mensajes en la pantalla.
-más adelante veremos en que consiste.'''
-
-#ACTIVIDAD 3: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # Suma
 suma = x + y
 print(suma)
@@ -47,6 +33,29 @@ print(modulo)
 exponente = x ** y
 print(exponente)
 
+'''RESPONDE EN EL CUADERNO DE APUNTES
+1 ¿Qué aparece en la terminal al darle ejecutar? ¿Y si borro print?
+2 ¿Escribe con tus palabras que lo que sucede?'''
+
+# NOTA: USO DE LA FUNCIÓN PRINT
+'''La función print() en Python es una función incorporada que se utiliza para mostrar mensajes en la pantalla.
+más adelante veremos en que consiste.'''
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 2: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# OTRA FORMA DE ESCRIBIRLO Y QUE APAREZCA EN PANTALLA ES:
+# Usar las mismas variables de la actividad anterior.
+
+print("Operadores aritméticos")
+print("si x+y =", x+y)   # resultado 13 suma
+print("si x-y =", x-y)   # resultado 7 resta
+print("si x*y =", x*y)   # resultado 30 multiplicación 
+print("si x/y =", x/y)   # resultado 3.3333333333333335 división
+print("si x%y =", x%y)   # resultado 1 módulo (redondea decimales a enteros)
+print("si x**y =", x**y) # resultado 1000 exponente
+print("si x//y =", x//y) # resultado 3 cociente
+''' La forma ("si x+y =", x+y) quiere decir que lo que va entre las comillas dobles es el texto peresonalizado a mostrar,
+luego va la coma (,) y se termina escribiendo la operación que se quiere realizar, en este caso la suma de las variables x y'''
+
 # 2.1.1 ORDEN DE APLICACIÓN
 '''En los ejemplos anteriores simplemente hemos aplicado un operador a dos números sin mezclarlos entre ellos.
 También es posible tener varios operadores en la misma línea de código, 
@@ -62,7 +71,7 @@ El orden de prioridad sería el siguiente para los operadores aritméticos, sien
 * / // Multiplicación, División, Cociente, Módulo
 + - Suma, Resta'''
 
-#ACTIVIDAD 4: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 3: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 print(10*(5+3)) # Con paréntesis se realiza primero la suma
 # resultado 80
 print(10*5+3)   # Sin paréntesis se realiza primero la multiplicación
@@ -73,8 +82,8 @@ print(-2**4)       # Primero se hace la potencia, después se aplica el signo
 # resultado -16
 
 # 2.2. OPERADORES DE COMPARACIÓN 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 4: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-#ACTIVIDAD 5: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # > (Mayor que)
 print(30 > 10) # resultado True
 # < (Menor que)
@@ -91,7 +100,7 @@ print(20 != 200) # resultado True
 # 2.3. OPERADORES DE ASIGNACIÓN 
 '''Los operadores de asignación nos permiten realizar una operación y almacenar su resultado en la variable inicial.'''
 
-#ACTIVIDAD 6: Copiar en VSC y ejecutar el ejemplo cada tipo de operador popuesto, en un nuevo archivo.<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 5: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # = (Operador de asignación)
 '''asigna a la variable de la izquierda el contenido que le ponemos a la derecha. '''
 x = 40 - 20
@@ -124,10 +133,8 @@ print(numero2) #  resultado 60
 
 # /= (Operador de división y asignación)
 numero3 = 40
-numero3 /= 2
-print(numero3) # resultado 20
 
-# Operadores de identidad: is , is not
+# 2.4. OPERADORES DE IDENTIDAD (is , is not)
 '''is devuelve True si los operandos se refieren al mismo objecto. De lo contrario devuelve False,
 is not devuelve True si los operandos no se refieren al mismo objecto. De lo contrario devuelve False.'''
 
@@ -138,89 +145,20 @@ print(a is b) # --> resultado False
 print(a is not c) # -->  resultado  False
 print(a is c) # -- resultado True
 
-# Operadores de pertenencia: in, not in
-
 # in devuelve True si el valor especificado se encuentra en la secuencia (objeto). De lo contrario devuelve False
 # not in devuelve True si el valor especificado no se encuentra en la secuencia (objeto). De lo contrario devuelve False
 
-lista_de_numeros = [20, 50, 100, 70, 400]
-print(30 in lista_de_numeros) #  resultado False
-cadena_de_texto = "Hola, Mundo!"
-print("H" in cadena_de_texto) #  resultado  True
+# 2.5. OPERADORES DE PERTENENCIA (in, not in)
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 6: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-# Estructuras de control:
-# Condicional if, elif y else
-
-*************************************************AQUI************************************
-
-ganancia = int(input("Cuanto dinero ganas al mes aproximadamente?: "))
-gasto = int(input("Cuanto gastas aproximadamente cada mes?: "))
-
-if ganancia/3 >= gasto :
-    print("Estas ahorrando correctamente!!")
-elif ganancia/2 >= gasto:
-    print("Estas ahorrando!!")
-elif ganancia > gasto and gasto <= ganancia * 0.8:
-    print("Estas ahorrando pero puedes ahorrar mucho mas!!")
-else:
-    print("No estas ahorrando correctamente!")
-
-# Bucles for, while
-lista_iterable = ["Hola", "mi", "nombre", "es", "Alvaro", "Neyra"]
-
-#for
-
-for palabra in lista_iterable:
-    print(palabra)
-
-# for, range
-    
-for i in range(10):
-    print(f"{i + 1}")
-
-# while and exceptions: Se ejecuta ilimitadamente hasta que la condicion sea falsa
-
-while True:
-    print("Dividir dos numeros....")
-    dividir_numero1 = int(input("Primer operando: "))
-    dividir_numero2 = int(input("Segundo operando: "))
-    try:
-       resultado_de_la_division = dividir_numero1 / dividir_numero2
-    except ValueError as e:
-        print("Tiene que ser un numero!!")
-        print(f"Error: {e}")
-    except Exception as Error:
-        print(f"Error cometido: {Error}")
-    else:
-        break
-    finally:
-        print("Finally siempre se ejecuta siempre!")
-
-print(resultado_de_la_division)
-
-# for, zip()
-numeros = [8, 100, 200]
-se_llaman = ["Ocho", "Cien", "Doscientos"]
-
-for e, i in zip(numeros, se_llaman):
-    print(f"{e} se llama: {i}")
-
-# for, enumerate():
-lista_de_elementos = ["Palabra", True, 300]
-
-for indice, elemento in enumerate(lista_de_elementos):
-    print(f"Este es el elemento: {elemento} del indice: {indice}")
-
-# Crea un programa que imprima por consola todos los números comprendidos entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
-def dificultad_extra():
-    for i in range(10, 56):
-        if i == 16:
-            continue
-        if i % 3 == 0:
-            continue
-        if i % 2 != 0:
-            continue
-
-        print(i)
-
-dificultad_extra()
+a = [1,2,3,4,5]
+#Esta 3 en la lista a?
+print (3 in a) # Muestra True 
+#No está 12 en la lista a?
+print (12 not in a) # Muestra True
+str = "Hello World"
+#Contiene World el string str?
+print ("World" in str) # Muestra True 
+#Contiene world el string str? (nota: distingue mayúsculas y minúsculas)
+print ("world" in str) # Muestra False  
+print ("code" not in str) # Muestra True
