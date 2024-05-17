@@ -5,9 +5,9 @@ Es una ruta para aprender y practicar lo que considero más básico.
 
 Si hay sugerencias o correcciones bienvenidas.
 
-
 Referencias:
 Este es mi camino para aprender en Python adaptando contenido de:
 
 Los Retos de Programación | by MoureDev](https://retosdeprogramacion.com/).
+
 Sitio web https://ellibrodepython.com
