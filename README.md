@@ -8,5 +8,5 @@ Si hay sugerencias o correcciones bienvenidas.
 
 Referencias:
 Este es mi camino para aprender en Python adaptando contenido de:
-Los Retos de Programación | by MoureDev
+[Los Retos de Programación | by MoureDev](https://retosdeprogramacion.com/)
 https://ellibrodepython.com
