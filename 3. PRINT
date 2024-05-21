@@ -55,3 +55,12 @@ print("Adiós")
 si se escriben comillas dentro de comillas se produce un error de sintaxis.'''
 print("Un tipo le dice a otro: "¿Cómo estás?"")
 # SyntaxError: invalid character in identifier
+print('Un tipo le dice a otro: '¿Cómo estás?'')
+# SyntaxError: invalid character in identifier
+
+'''Para incluir comillas dentro de comillas, se puede escribir una contrabarra (\) 
+antes de la comilla para que Python reconozca la comilla como carácter, 
+no como delimitador de la cadena:'''
+print("Un tipo le dice a otro: \"¿Hola Bro?\"")
+print('Y el otro le contesta: \'¡Bro, no apures!\'')
+'''
