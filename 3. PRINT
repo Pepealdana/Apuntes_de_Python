@@ -1,3 +1,4 @@
+
 '''La función print() permite mostrar el texto en pantalla.
  El texto a mostrar se escribe como argumento de la función:'''
 print("Hola")
@@ -6,4 +7,24 @@ print("Hola")
 '''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
 Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:
 print("Hola", "Adiós")
-Hola Adiós
+# Hola Adiós
+
+'''Cuando se trata de dos cadenas seguidas, se puede no escribir comas entre ellas,
+pero las cadenas se escribirán seguidas, sin espacio en blanco entre ellas:'''
+print("Hola" "Adiós")
+# HolaAdios
+
+'''Al final de cada print(), Python añade automáticamente un salto de línea:'''
+print("Hola")
+print("Adiós")
+# Hola
+# Adiós
+
+Para generar una línea en blanco, se puede escribir una orden print() sin argumentos.
+
+print("Hola")
+print()
+print("Adiós")
+Hola
+
+Adiós
