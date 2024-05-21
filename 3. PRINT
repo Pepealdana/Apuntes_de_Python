@@ -4,6 +4,9 @@
 print("Hola")
 # Hola (lo que se muestra en pantalla)
 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>Escribe en el cuaderno el print y el resultado de cada ejemplo.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 '''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
 Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:
 print("Hola", "Amigo")
@@ -30,7 +33,6 @@ print("Amigo")
 
 '''Si se quiere que Python no añada un salto de línea al final de un print(), 
 se debe añadir al final el argumento end="":
-
 print("Hola", end="")
 print("Amigo")
 # HolaAmigo
@@ -62,5 +64,19 @@ print('Un tipo le dice a otro: '¿Cómo estás?'')
 antes de la comilla para que Python reconozca la comilla como carácter, 
 no como delimitador de la cadena:'''
 print("Un tipo le dice a otro: \"¿Hola Bro?\"")
-print('Y el otro le contesta: \'¡Bro, no apures!\'')
+print('Y el otro le contesta: \'¡No apures!\'')
 '''
+
+'''La función print() permite incluir variables o expresiones como argumentos, 
+lo que nos permite combinar texto y variables:'''
+
+#ejemplo de combinar textos o variables
+nombre = "Mario"
+edad = 19
+print("Me llamo", nombre, "y tengo", edad, "años.")
+# Me llamo Mario y tengo 19 años.
+
+#ejemplo
+semanas = 4
+print("En", semanas , "semanas hay", 6 * semanas, "días.")
+# En 4 semanas hay 24 días.
