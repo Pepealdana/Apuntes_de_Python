@@ -4,7 +4,7 @@
 print("Hola")
 # Hola (lo que se muestra en pantalla)
 
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar - Print.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # >>>>>>>>>>>>>>>>Escribe en el cuaderno el print y el resultado de cada ejemplo.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 '''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
@@ -80,3 +80,8 @@ print("Me llamo", nombre, "y tengo", edad, "años.")
 semanas = 4
 print("En", semanas , "semanas hay", 6 * semanas, "días.")
 # En 4 semanas hay 24 días.
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CIERRE DE ACTIVIDAD 1: Crea un archivo nuevo en VSC - FABULA.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+'''Diseña un juego de palabras tipo adivinanza, en donde se  muestre en pantalla una fábula complementadas con los datos de las variables,
+y jugando con operaciones mátemáticas, combinando lo visto en la sección de operadores y print'''
+# ejemplo: "más vale___(variable)__, que __(operación matemática)___ volando. (se debió definir antes todas las variables a usar). 
