@@ -1,1 +1,9 @@
+'''La función print() permite mostrar el texto en pantalla.
+ El texto a mostrar se escribe como argumento de la función:'''
+print("Hola")
+# Hola (lo que se muestra en pantalla)
 
+'''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
+Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:
+print("Hola", "Adiós")
+Hola Adiós
