@@ -12,4 +12,4 @@ Los Retos de Programación | by MoureDev | (https://retosdeprogramacion.com/).
 
 El Libro De Python | https://ellibrodepython.com
 
-El Libro De Python | https://www.mclibre.org
+mclibre | https://www.mclibre.org
