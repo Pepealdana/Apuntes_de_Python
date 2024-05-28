@@ -1,1 +1,45 @@
+#INPUT O ENTRADA POR TECLADO
+"""La función input() permite obtener texto escrito por teclado. Al llegar a la función, el programa se detiene esperando que se escriba algo 
+y se pulse la tecla Intro, como muestra el siguiente ejemplo:"""
 
+print("¿Cómo te llamas?")                   #Lo que se ve en pantalla=> ¿Cómo te llamas?
+nombre = input()                            #Se pide escribir un nombre en una línea distinta
+print(f"Mucho gusto, {nombre}")             #Lo que se ve en pantalla=> Mucho gusto, ________ 
+
+'''Si se prefiere que el usuario escriba su respuesta a continuación de la pregunta, se podría utilizar el argumento opcional end en la función print(), 
+que indica el carácter o caracteres a utilizar en vez del salto de línea. 
+Para separar la respuesta de la pregunta se ha añadido un espacio al final de la pregunta."""
+
+print("¿Cómo te llamas? ", end="")           #Lo que se ve en pantalla=> ¿Cómo te llamas? # Se pide escribir un nombre en la misma línea
+nombre = input()
+print(f"Me alegro de conocerte, {nombre}")   #Lo que se ve en pantalla=> Me alegro de conocerte, ________ 
+
+# >>>>>NOTA<<<<<<<<<<<<< USAR Cadenas "f", hace más sencillo introducir variables y expresiones en las cadenas. 
+# Una cadena "f" contiene variables y expresiones entre llaves "{}" que se sustituyen directamente por su valor.
+
+'''Otra solución, más compacta, es aprovechar que a la función input() se le puede enviar un argumento
+que se escribe en la pantalla (sin añadir un salto de línea):'''
+
+nombre = input("¿Cúal es tu nombre? ")       #Da el saludo y pide de una vez entrada de texto
+print(f"Hola, {nombre}")                     #Muestra en pantalla (ahora solo se usan 2 lineas de código
+
+
+
+
+----------------------------------------
+# 2. TIPOS DE OPERADORES
+
+# 2.1. OPERADORES ARITMÉTICOS:
+'''Los operadores aritméticos o arithmetic operators son los más comunes que nos podemos encontrar, 
+y nos permiten realizar operaciones aritméticas sencillas, como pueden ser la suma, resta o exponente.'''
+
+# TODAS LAS ACTIVIDADES VAN ANOTADAS EN EL CUADERNO DE APUNTES
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+x = 10; y = 3
+# Suma
+suma = x + y
+print(suma)
+# Resta
+resta = x - y
+print(resta)
