@@ -72,7 +72,8 @@ print()
 print("Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. Por último, hace 57 km más hacia el norte.")
 print()
 print("¿cuántos kilómetros ha recorrido?")
-
+print(suma)
+prinAhora hagamos unos cambios en la forma de mostrar la información")
 
 '''Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. 
 Por último, hace 57 km más hacia el norte, ¿cuántos kilómetros ha recorrido?'''
