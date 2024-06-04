@@ -1,4 +1,14 @@
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>¿Qué he aprendido? - Crea un archivo nuevo en VSC - HISTORIA.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+# 1. Copia todos los siguientes datos y operaciones.
+# 2. Ejecuta el código.
+# 3. Analiza lo que muestra la terminal
+
+'''Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. 
+Por último, hace 57 km más hacia el norte, ¿cuántos kilómetros ha recorrido?'''
+
 #variables
 animal=oso
 direccion1=sur
@@ -41,9 +51,8 @@ print(suma)
 #op. asignacion<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 -----------------
-un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. 
-Por último, hace 57 km más hacia el norte, ¿cuántos kilómetros ha recorrido?
 
+#4. Diseña un juego de palabras tipo acertijo matemático basado en el ejemplo dado anteriormente.
 ------
 Respuesta: 102 kilómetros
 
@@ -52,3 +61,18 @@ Respuesta: 102 kilómetros
 - PRINT línea en blanco
 - PRINT variable de texto
 - PRINT palabras con comillas'''
+
+
+
+'''SE DEBE USAR:
+- OPERADORES Airtméticos
+- OPERADORES de comparación
+- OPERADORES de asignación
+- OPERADORES de identidad
+- OPERADORES de pertenecia
+
+- PRINT de cadenas de texto
+- PRINT salto de línea
+- PRINT línea en blanco
+- PRINT variable de texto
+- PRINT palabras con comillas''' 
