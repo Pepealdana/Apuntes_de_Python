@@ -80,24 +80,3 @@ print("Me llamo", nombre, "y tengo", edad, "años.")
 semanas = 4
 print("En", semanas , "semanas hay", 6 * semanas, "días.")
 # En 4 semanas hay 24 días.
-
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CIERRE DE ACTIVIDAD 1: Crea un archivo nuevo en VSC - HISTORIA.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-'''Diseña un juego de palabras tipo adivinanza, en donde se  muestre en pantalla una fábula complementadas con los datos de las variables,
-y jugando con operaciones mátemáticas, combinando lo visto en la sección de operadores y print'''
-# ejemplo: "más vale___(variable)__, que __(operación matemática)___ volando. (se debió definir antes todas las variables a usar). 
-
-'''SE DEBE USAR:
-- OPERADORES Airtméticos
-- OPERADORES de comparación
-- OPERADORES de asignación
-- OPERADORES de identidad
-- OPERADORES de pertenecia
-
-- PRINT de cadenas de texto
-- PRINT salto de línea
-- PRINT línea en blanco
-- PRINT variable de texto
-- PRINT palabras con comillas''' 
