@@ -6,9 +6,7 @@
 # 2. Ejecuta el código.
 # 3. Analiza lo que muestra la terminal
 
-'''Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. 
-Por último, hace 57 km más hacia el norte, ¿cuántos kilómetros ha recorrido?'''
-
+#>>>>>>>>>>>>> Copia desde la siguiente linea <<<<<<<<
 #variables
 animal=oso
 direccion1=sur
@@ -52,27 +50,110 @@ print(suma)
 
 -----------------
 
-#4. Diseña un juego de palabras tipo acertijo matemático basado en el ejemplo dado anteriormente.
-------
-Respuesta: 102 kilómetros
-
-- PRINT de cadenas de texto
-- PRINT salto de línea
-- PRINT línea en blanco
-- PRINT variable de texto
-- PRINT palabras con comillas'''
-
-
-
+#4. Diseña un juego de palabras tipo acertijo matemático basado en el ejemplo dado anteriormente, usdando:
 '''SE DEBE USAR:
 - OPERADORES Airtméticos
 - OPERADORES de comparación
 - OPERADORES de asignación
-- OPERADORES de identidad
-- OPERADORES de pertenecia
 
 - PRINT de cadenas de texto
 - PRINT salto de línea
 - PRINT línea en blanco
 - PRINT variable de texto
 - PRINT palabras con comillas''' 
+
+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+print("La historia del OSO")
+print()
+print("Pon atención a la historia")
+print()
+print("Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. Por último, hace 57 km más hacia el norte.")
+print()
+print("¿cuántos kilómetros ha recorrido?")
+
+
+'''Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. 
+Por último, hace 57 km más hacia el norte, ¿cuántos kilómetros ha recorrido?'''
+-------------
+-------------
+----------
+
+print("Hola")
+# Hola (lo que se muestra en pantalla)
+
+
+'''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
+Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:
+print("Hola", "Amigo")
+# Hola Amigo
+
+'''Cuando se trata de dos cadenas seguidas, se puede omitir las comas entre ellas,
+pero las cadenas se escribirán, sin espacio en blanco entre ellas:'''
+print("Hola" "Amigo")
+# HolaAmigo
+
+'''Al final de cada print(), Python añade automáticamente un salto de línea:'''
+print("Hola")
+print("Amigo")
+# Hola
+# Amigo
+
+'''Para generar una línea en blanco, se puede escribir un print() sin argumentos.'''
+print("Hola")
+print()
+print("Amigo")
+# Hola
+#
+# Amigo
+
+'''Si se quiere que Python no añada un salto de línea al final de un print(), 
+se debe añadir al final el argumento end="":
+print("Hola", end="")
+print("Amigo")
+# HolaAmigo
+
+'''En el ejemplo anterior, las dos cadenas se muestran pegadas. 
+Si se quieren separar los argumentos en la salida, hay que incluir los espacios deseados
+(bien en la cadena, bien en el argumento end):'''
+print("Hola. ", end="") # Hola, va con un espacio al final.
+print("Amigo")
+# Hola. Amigo # Aparece el espacio al final de Hola.
+print("Hola.", end=" ") # end, va con un espacio entre las comillas.
+print("Amigo")
+# Hola. Amigo # se agraga un espacio del end entre las comillas.
+
+'''El valor del parámetro end puede ser una variable:'''
+texto = " y " # se define la variable texto
+print("Hola", end=texto)
+print("Adiós")
+# Hola y Adiós
+
+'''Como las comillas indican el principio y el final de una cadena, 
+si se escriben comillas dentro de comillas se produce un error de sintaxis.'''
+print("Un tipo le dice a otro: "¿Cómo estás?"")
+# SyntaxError: invalid character in identifier
+print('Un tipo le dice a otro: '¿Cómo estás?'')
+# SyntaxError: invalid character in identifier
+
+'''Para incluir comillas dentro de comillas, se puede escribir una contrabarra (\) 
+antes de la comilla para que Python reconozca la comilla como carácter, 
+no como delimitador de la cadena:'''
+print("Un tipo le dice a otro: \"¿Hola Bro?\"")
+print('Y el otro le contesta: \'¡No apures!\'')
+'''
+
+'''La función print() permite incluir variables o expresiones como argumentos, 
+lo que nos permite combinar texto y variables:'''
+
+#ejemplo de combinar textos o variables
+nombre = "Mario"
+edad = 19
+print("Me llamo", nombre, "y tengo", edad, "años.")
+# Me llamo Mario y tengo 19 años.
+
+#ejemplo
+semanas = 4
+print("En", semanas , "semanas hay", 6 * semanas, "días.")
+# En 4 semanas hay 24 días.
