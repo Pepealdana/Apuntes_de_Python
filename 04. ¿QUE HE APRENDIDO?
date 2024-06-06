@@ -1,5 +1,5 @@
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>¿Qué he aprendido? - Crea un archivo nuevo en VSC - HISTORIA.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>¿Qué he aprendido? - Crea un archivo nuevo en VSC - HISTORIA1.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 # 1. Crea las siguientes variables.
@@ -44,22 +44,6 @@ print(lista)
 suma /= 3
 print(suma)
 
------------------
-
-#. Diseña un juego de palabras tipo acertijo matemático basado en el ejemplo dado anteriormente, usdando:
-'''SE DEBE USAR:
-- diferentes OPERADORES Airtméticos
-- diferentes OPERADORES de comparación
-- diferentes OPERADORES de asignación
-
-- PRINT de cadenas de texto
-- PRINT salto de línea
-- PRINT línea en blanco
-- PRINT variable de texto
-- PRINT palabras con comillas''' 
-
-mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-
 # 3. Ahora mostremos los datos obtenidos de otra forma. Copia el siguiente código y ejecuta.
 
 print("La historia del OSO")
@@ -80,87 +64,31 @@ print("Después, camina otros", distancia2, "kilometros, en dirección al:", dir
 print()
 print("por último, hace", distancia3, "kilometros, hacia el:", direccion3)
 print()
-print("En total recorrió:"suma"kilometros)
-
-
-nombre = "Mario"
-edad = 19
-print("Me llamo", nombre, "y tengo", edad, "años.")
-# Me llamo Mario y tengo 19 años.
--------------
--------------
-----------
-
-'''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
-Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:
-print("Hola", "Amigo")
-# Hola Amigo
-
-'''Cuando se trata de dos cadenas seguidas, se puede omitir las comas entre ellas,
-pero las cadenas se escribirán, sin espacio en blanco entre ellas:'''
-print("Hola" "Amigo")
-# HolaAmigo
-
-'''Al final de cada print(), Python añade automáticamente un salto de línea:'''
-print("Hola")
-print("Amigo")
-# Hola
-# Amigo
-
-'''Para generar una línea en blanco, se puede escribir un print() sin argumentos.'''
-print("Hola")
+print("En total recorrió:", suma, "kilometros")
 print()
-print("Amigo")
-# Hola
-#
-# Amigo
+print("si le restamos a la distancia final, lo que recorrió en el ultimo tramo, da: ", resta, "kilometros")
+print()
+print("se dice que es", distancia1 > distancia2, ", que recorrió más en el primer trayecto, que en el segundo")
+print()
+print("al final el titulo podria ser:\"la historia del OSO cansado \"")
 
-'''Si se quiere que Python no añada un salto de línea al final de un print(), 
-se debe añadir al final el argumento end="":
-print("Hola", end="")
-print("Amigo")
-# HolaAmigo
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>¿Qué he aprendido? - Crea un archivo nuevo en VSC - evaluación1.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-'''En el ejemplo anterior, las dos cadenas se muestran pegadas. 
-Si se quieren separar los argumentos en la salida, hay que incluir los espacios deseados
-(bien en la cadena, bien en el argumento end):'''
-print("Hola. ", end="") # Hola, va con un espacio al final.
-print("Amigo")
-# Hola. Amigo # Aparece el espacio al final de Hola.
-print("Hola.", end=" ") # end, va con un espacio entre las comillas.
-print("Amigo")
-# Hola. Amigo # se agraga un espacio del end entre las comillas.
+# Crea tu propia adaptación del ejemplo anterior con el siguiente reto matemático.
 
-'''El valor del parámetro end puede ser una variable:'''
-texto = " y " # se define la variable texto
-print("Hola", end=texto)
-print("Adiós")
-# Hola y Adiós
+'''Claudia tiene 12 monedas y quiere comprar un chocolate que vale 2. Pero cuando va al quiosco, 
+su amiga Florencia le pide prestadas 9 y Carla le cobra 2 que le debía. Pero Claudia encuentra 7 monedas en el camino. 
+¿Cuántos chocolates puede comprar?'''
 
-'''Como las comillas indican el principio y el final de una cadena, 
-si se escriben comillas dentro de comillas se produce un error de sintaxis.'''
-print("Un tipo le dice a otro: "¿Cómo estás?"")
-# SyntaxError: invalid character in identifier
-print('Un tipo le dice a otro: '¿Cómo estás?'')
-# SyntaxError: invalid character in identifier
+'''SE DEBE USAR:
+- diferentes OPERADORES Airtméticos
+- diferentes OPERADORES de comparación
+- diferentes OPERADORES de asignación
 
-'''Para incluir comillas dentro de comillas, se puede escribir una contrabarra (\) 
-antes de la comilla para que Python reconozca la comilla como carácter, 
-no como delimitador de la cadena:'''
-print("Un tipo le dice a otro: \"¿Hola Bro?\"")
-print('Y el otro le contesta: \'¡No apures!\'')
-'''
-
-'''La función print() permite incluir variables o expresiones como argumentos, 
-lo que nos permite combinar texto y variables:'''
-
-#ejemplo de combinar textos o variables
-nombre = "Mario"
-edad = 19
-print("Me llamo", nombre, "y tengo", edad, "años.")
-# Me llamo Mario y tengo 19 años.
-
-#ejemplo
-semanas = 4
-print("En", semanas , "semanas hay", 6 * semanas, "días.")
-# En 4 semanas hay 24 días.
+- PRINT de cadenas de texto
+- PRINT salto de línea
+- PRINT línea en blanco
+- PRINT variable de texto
+- PRINT palabras con comillas''' 
