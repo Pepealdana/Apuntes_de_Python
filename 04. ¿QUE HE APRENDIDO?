@@ -2,12 +2,8 @@
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>¿Qué he aprendido? - Crea un archivo nuevo en VSC - HISTORIA.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-# 1. Copia todos los siguientes datos y operaciones.
-# 2. Ejecuta el código.
-# 3. Analiza lo que muestra la terminal
+# 1. Crea las siguientes variables.
 
-#>>>>>>>>>>>>> Copia desde la siguiente linea <<<<<<<<
-#variables
 animal=oso
 direccion1=sur
 direccion2=este
@@ -15,6 +11,8 @@ direccion3=norte
 distancia1=26
 distancia2=19
 distancia3=57
+
+# 2. Copia cada uno de los operadores que se muestran y ejecuta. Analiza lo que muestra la terminal
 
 #op. aritmeticos<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # Suma
@@ -46,15 +44,13 @@ print(lista)
 suma /= 3
 print(suma)
 
-#op. asignacion<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
 -----------------
 
-#4. Diseña un juego de palabras tipo acertijo matemático basado en el ejemplo dado anteriormente, usdando:
+#. Diseña un juego de palabras tipo acertijo matemático basado en el ejemplo dado anteriormente, usdando:
 '''SE DEBE USAR:
-- OPERADORES Airtméticos
-- OPERADORES de comparación
-- OPERADORES de asignación
+- diferentes OPERADORES Airtméticos
+- diferentes OPERADORES de comparación
+- diferentes OPERADORES de asignación
 
 - PRINT de cadenas de texto
 - PRINT salto de línea
@@ -64,6 +60,7 @@ print(suma)
 
 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
+# 3. Ahora mostremos los datos obtenidos de otra forma. Copia el siguiente código y ejecuta.
 
 print("La historia del OSO")
 print()
@@ -73,17 +70,26 @@ print("Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 1
 print()
 print("¿cuántos kilómetros ha recorrido?")
 print(suma)
-prinAhora hagamos unos cambios en la forma de mostrar la información")
 
-'''Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. 
-Por último, hace 57 km más hacia el norte, ¿cuántos kilómetros ha recorrido?'''
+# 4. Cambiemos la forma de presentar la información.
+print ("Ahora hagamos unos cambios en la forma de mostrar la información")
+print()
+print("Un", animal, "recorre", distancia1, "kilometros, en dirección hacia el:", direccion1)
+print()
+print("Después, camina otros", distancia2, "kilometros, en dirección al:", direccion2)
+print()
+print("por último, hace", distancia3, "kilometros, hacia el:", direccion3)
+print()
+print("En total recorrió:"suma"kilometros)
+
+
+nombre = "Mario"
+edad = 19
+print("Me llamo", nombre, "y tengo", edad, "años.")
+# Me llamo Mario y tengo 19 años.
 -------------
 -------------
 ----------
-
-print("Hola")
-# Hola (lo que se muestra en pantalla)
-
 
 '''La función print() admite varios argumentos seguidos. En el programa, los argumentos deben separarse por comas. 
 Los argumentos se muestran en el mismo orden y en la misma línea, separados por espacios:
