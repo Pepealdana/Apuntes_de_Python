@@ -4,10 +4,10 @@
 
 # 1. Crea las siguientes variables.
 
-animal=oso
-direccion1=sur
-direccion2=este
-direccion3=norte
+animal="oso"
+direccion1="sur"
+direccion2="este"
+direccion3="norte"
 distancia1=26
 distancia2=19
 distancia3=57
