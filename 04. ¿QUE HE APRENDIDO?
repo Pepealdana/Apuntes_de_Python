@@ -43,7 +43,7 @@ print(lista)
 
 print("La historia del OSO")
 print()
-print("Pon atención a la historia")
+print("Conoce esta historia")
 print()
 print("Un oso recorre 26 km en dirección hacia el sur. Después, camina otros 19 km en dirección este. Por último, hace 57 km más hacia el norte.")
 print()
