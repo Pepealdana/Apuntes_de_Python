@@ -14,7 +14,7 @@ distancia3=57
 
 # 2. Copia cada uno de los operadores que se muestran y ejecuta. Analiza lo que muestra la terminal
 
-#op. aritmeticos<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#operador aritméticos<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # Suma
 suma = distancia1 + distancia2 + distancia3
 print(suma)
@@ -24,7 +24,7 @@ resta = suma - distancia3  #kilometros sin el tercer recorrido
 multiplicacion = distancia1 * 3  #el resultado final si los 3 recorridos fueranm como el primero
 print(multiplicacion)
 
-#op. comparacion<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#operador comparación<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # > (Mayor que)
 print(distancia1 > distancia2)
 # < (Menor que)
@@ -32,17 +32,12 @@ print(distancia2 < distancia3)
 # == (Igual que)
 print(distancia1 == distancia3)
 
-#op. asignacion<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#operador asignación<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # += (Operador de suma y asignación)
 suma += 20 #al resultado de la suma se le adiciona 20 kilometros
 print(suma) 
-# x= (ampliar una lista)
 lista=[distancia1,distancia2,distancia3]
-lista+=[suma,multiplicacion]
 print(lista)
-# /= (Operador de división y asignación)
-suma /= 3
-print(suma)
 
 # 3. Ahora mostremos los datos obtenidos de otra forma. Copia el siguiente código y ejecuta.
 
