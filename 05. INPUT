@@ -23,8 +23,9 @@ que se escribe en la pantalla (sin añadir un salto de línea):'''
 nombre = input("¿Cúal es tu nombre? ")       #Da el saludo y pide de una vez entrada de texto
 print(f"Hola, {nombre}")                     #Muestra en pantalla (ahora solo se usan 2 lineas de código
 
-
-# 5. Crea tu propia adaptación del ejemplo anterior con el siguiente reto matemático.
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Práctica - Crea un archivo nuevo en VSC - Reto.PY .<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                                 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# Crea tu propia adaptación del siguiente reto matemático, usando lo visto en las secciones 4 y 5.
 
 '''Claudia tiene 12 monedas y quiere comprar un chocolate que vale 2. Pero cuando va al quiosco, 
 su amiga Florencia le pide prestadas 9 y Carla le cobra 2 que le debía. Pero Claudia encuentra 7 monedas en el camino. 
