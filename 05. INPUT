@@ -23,23 +23,3 @@ que se escribe en la pantalla (sin añadir un salto de línea):'''
 nombre = input("¿Cúal es tu nombre? ")       #Da el saludo y pide de una vez entrada de texto
 print(f"Hola, {nombre}")                     #Muestra en pantalla (ahora solo se usan 2 lineas de código
 
-
-
-
-----------------------------------------
-# 2. TIPOS DE OPERADORES
-
-# 2.1. OPERADORES ARITMÉTICOS:
-'''Los operadores aritméticos o arithmetic operators son los más comunes que nos podemos encontrar, 
-y nos permiten realizar operaciones aritméticas sencillas, como pueden ser la suma, resta o exponente.'''
-
-# TODAS LAS ACTIVIDADES VAN ANOTADAS EN EL CUADERNO DE APUNTES
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ACTIVIDAD 1: Copiar en VSC y ejecutar.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-x = 10; y = 3
-# Suma
-suma = x + y
-print(suma)
-# Resta
-resta = x - y
-print(resta)
