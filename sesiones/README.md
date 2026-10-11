@@ -1,6 +1,6 @@
 # Sesiones de Python
 
-Ruta de aprendizaje práctica. Las sesiones se están migrando desde los apuntes originales: durante la migración se conserva el material anterior, pero estas páginas nuevas serán la referencia principal una vez revisadas.
+Ruta de aprendizaje práctica. Las sesiones nuevas se están construyendo a partir de los apuntes originales, conservando los materiales antiguos mientras se revisan y migran.
 
 | Sesión | Tema | Estado |
 |---|---|---|
@@ -9,6 +9,10 @@ Ruta de aprendizaje práctica. Las sesiones se están migrando desde los apuntes
 | [03. Entrada con input()](03-entrada-input/README.md) | Entrada de texto y conversión numérica | Estructurada |
 | [04. Operadores](04-operadores/README.md) | Aritmética, comparación, asignación, identidad y pertenencia | Estructurada |
 | [05. Práctica integradora](05-practica-integradora/README.md) | Variables, salida y operadores en un programa | Estructurada |
+| [06. Condicionales](06-condicionales/README.md) | Decisiones con `if`, `elif` y `else` | Nueva |
+| [07. Ciclos](07-ciclos/README.md) | Repeticiones con `for` y `while` | Nueva |
+| [08. Cadenas y colecciones](08-cadenas-y-colecciones/README.md) | Texto, listas y primera mirada a otras colecciones | Nueva |
+| [09. Funciones](09-funciones/README.md) | Parámetros, argumentos y valores de retorno | Nueva |
 
 ## Cómo avanzar
 
