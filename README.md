@@ -77,7 +77,7 @@ El repositorio ahora incluye proyectos iniciales y versiones más completas en v
 - **Interfaces:** calculadora con CustomTkinter, formulario con CSV y gestor de actividades con JSON.
 - **Juegos:** movimiento inicial y juego de recolección con colisiones, puntuación, vidas y reinicio mediante Pygame.
 - **Automatización y datos:** organizador de archivos con modo simulación, informe CSV validado y gráfica de mediciones.
-- **Web:** lista de tareas local con Flask y persistencia JSON.
+- **Web y APIs:** lista de tareas local con Flask y persistencia JSON, más una API REST con GET, POST, PATCH y DELETE.
 - **Imágenes:** redimensionamiento de copias con Pillow.
 - **Ciencia:** simulación ideal de proyectil con CSV y gráfica.
 - **IA:** experimento de clasificación Iris con scikit-learn.
