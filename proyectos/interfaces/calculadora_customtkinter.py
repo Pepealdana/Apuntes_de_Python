@@ -6,7 +6,25 @@ Instalación:
 Permite sumar, restar, multiplicar y dividir dos números.
 """
 
+import math
 import customtkinter as ctk
+
+
+def calcular_operacion(a, b, operacion):
+    """Calcula una operación validada; separa la lógica de la interfaz."""
+    if not math.isfinite(a) or not math.isfinite(b):
+        raise ValueError("Los números deben ser valores finitos.")
+    if operacion == "+":
+        return a + b
+    if operacion == "−":
+        return a - b
+    if operacion == "×":
+        return a * b
+    if operacion == "÷":
+        if b == 0:
+            raise ZeroDivisionError("No se puede dividir entre cero.")
+        return a / b
+    raise ValueError(f"Operación no reconocida: {operacion}")
 
 
 class Calculadora(ctk.CTk):
@@ -35,21 +53,13 @@ class Calculadora(ctk.CTk):
         try:
             a = float(self.entrada_a.get().replace(",", "."))
             b = float(self.entrada_b.get().replace(",", "."))
-        except ValueError:
-            self.resultado.configure(text="Escribe dos números válidos. Puedes usar coma o punto decimal.")
+            valor = calcular_operacion(a, b, operacion)
+        except ZeroDivisionError:
+            self.resultado.configure(text="No se puede dividir entre cero.")
             return
-
-        if operacion == "+":
-            valor = a + b
-        elif operacion == "−":
-            valor = a - b
-        elif operacion == "×":
-            valor = a * b
-        else:
-            if b == 0:
-                self.resultado.configure(text="No se puede dividir entre cero.")
-                return
-            valor = a / b
+        except ValueError:
+            self.resultado.configure(text="Escribe dos números válidos y finitos. Puedes usar coma o punto decimal.")
+            return
 
         self.resultado.configure(text=f"Resultado: {valor:g}")
 
