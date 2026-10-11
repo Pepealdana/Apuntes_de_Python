@@ -117,3 +117,12 @@ Solicita dos números y una operación (+, -, *, /). Usa condicionales para real
 ## Próxima sesión
 
 **Ciclos:** repetir acciones sin copiar instrucciones una y otra vez.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Añade decisiones al programa: si el presupuesto disponible alcanza, muestra que la actividad está dentro del presupuesto; de lo contrario, informa cuánto dinero falta. Añade otra condición que indique si hay materiales suficientes según un mínimo que tú definas.
+
+**Criterio de revisión:** los casos límite están contemplados y las ramas `if`, `elif` y `else` responden a condiciones diferentes.
+
+**Evidencia:** prueba un caso dentro del presupuesto y otro fuera de él.
