@@ -84,6 +84,8 @@ El repositorio ahora incluye proyectos iniciales y versiones más completas en v
 
 Los proyectos están incorporados en el repositorio, pero no todos han sido ejecutados en un entorno gráfico real. El plan de implementación diferencia explícitamente el código disponible de las pruebas que faltan.
 
+Las pruebas unitarias iniciales se encuentran en [pruebas/](pruebas/README.md) y pueden ejecutarse con `python -m unittest discover -s pruebas -v`. El flujo de GitHub Actions está configurado para comprobar sintaxis y ejecutar esta suite.
+
 ## Entorno recomendado
 
 - Python 3
