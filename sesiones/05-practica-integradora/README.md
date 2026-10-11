@@ -17,7 +17,7 @@ El programa debe calcular la distancia total recorrida. No debe confundir la dis
 
 ## 2. Ejemplo guiado
 
-Ejecuta [05_historia_del_oso.py](ejemplos/05_historia_del_oso.py). Identifica dónde se guardan las distancias, dónde se calcula el total y cómo se presenta el resultado.
+Ejecuta [05_historia_del_oso.py](ejemplos/05_historia_del_oso.py). Identifica dónde se guardan las distancias, dónde se calcula el total y cómo se presenta el resultado. Para comprobar el reto de las monedas, consulta [05_compra_chocolates.py](ejemplos/05_compra_chocolates.py), que separa el cálculo del dinero disponible, la cantidad de chocolates completos y el sobrante.
 
 El total correcto es 26 + 19 + 57 = 102 km.
 
