@@ -51,12 +51,15 @@ La incorporación de bibliotecas será gradual: no se instalarán todas al comie
 
 Consulta el [Mapa de posibilidades de Python](MAPA_DE_POSIBILIDADES.md) para ver el alcance previsto, las herramientas posibles y la secuencia de incorporación.
 
-## Sesiones en desarrollo
+## Sesiones
+
+Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en orden.
 
 - [Sesión 1: Sintaxis, variables y tipos de datos](sesiones/01-sintaxis-y-variables/README.md)
-- [Ejemplo ejecutable de la sesión 1](sesiones/01-sintaxis-y-variables/ejemplos/01_sintaxis_variables.py)
-
-Los apuntes anteriores se conservarán mientras se revisan y migran gradualmente. Antes de sustituir material antiguo, se comprobará qué conceptos y ejemplos útiles contiene para evitar pérdidas y corregir errores reales.
+- [Sesión 2: Mostrar información con print()](sesiones/02-salida-y-print/README.md)
+- [Sesión 3: Recibir información con input()](sesiones/03-entrada-input/README.md)
+- [Sesión 4: Operadores](sesiones/04-operadores/README.md)
+- [Sesión 5: Práctica integradora](sesiones/05-practica-integradora/README.md)
 
 ## Entorno recomendado
 
