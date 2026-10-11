@@ -107,3 +107,12 @@ Usa `random.randint()` para elegir un número entre 1 y 20. Permite intentos con
 ## Próxima sesión
 
 **Cadenas y colecciones:** almacenar y recorrer grupos de datos.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Permite registrar varias actividades con un ciclo. Después de cada ficha, pregunta si se desea registrar otra. Usa una variable acumuladora para calcular el presupuesto total.
+
+**Criterio de revisión:** el ciclo termina cuando corresponde y el total incluye cada actividad exactamente una vez.
+
+**Evidencia:** registra al menos tres actividades ficticias y verifica el total manualmente.
