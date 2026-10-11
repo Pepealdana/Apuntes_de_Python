@@ -31,3 +31,8 @@ Es una práctica local, no una aplicación lista para producción. No tiene aute
 5. Sustituye JSON por SQLite cuando necesites consultas más complejas.
 
 **Estado:** código incorporado; deben ejecutarse pruebas locales de rutas y persistencia antes de considerar la aplicación validada.
+
+
+## Ruta complementaria: API REST
+
+El archivo [api_tareas.py](api_tareas.py) expone las mismas ideas como endpoints HTTP que reciben y devuelven JSON. Consulta la [guía de la API](api_tareas_README.md) para ejemplos con `curl` y los códigos de estado.
