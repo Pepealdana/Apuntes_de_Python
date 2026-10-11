@@ -9,7 +9,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Mantener una comprobación automática de sintaxis.
 - [x] Añadir una práctica acumulativa que evoluciona de variables a un proyecto con JSON a lo largo de las sesiones 1–12.
 - [ ] Revisar cada ejemplo Python contra su explicación y corregir posibles discrepancias.
-- [ ] Homogeneizar los criterios de logro y los cierres de las doce sesiones.
+- [x] Añadir una plantilla didáctica común y enlazarla desde el índice de sesiones.\n- [x] Incorporar prácticas acumulativas en las sesiones 1–12.\n- [ ] Revisar cada ejemplo Python contra su explicación y corregir posibles discrepancias.
 - [ ] Añadir ejercicios de repaso acumulativo después de las sesiones 4, 8 y 12.
 
 ## Fase 2 — Organización y herramientas
@@ -18,7 +18,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Crear un catálogo de rutas aplicadas.
 - [x] Añadir una guía de entornos virtuales, pip y errores de instalación.
 - [ ] Documentar depuración en VS Code, pruebas con unittest y uso básico de Git.
-- [ ] Establecer una plantilla común para nuevos proyectos.
+- [x] Establecer una plantilla común para nuevas sesiones.\n- [ ] Establecer una plantilla común de README para nuevos proyectos.
 
 ## Fase 3 — CustomTkinter
 
@@ -63,7 +63,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 
 ## Fase 7 — Calidad y proyectos integradores
 
-- [ ] Crear pruebas unitarias para funciones de cálculo, validación, lectura y escritura.
+- [x] Añadir pruebas unitarias iniciales para lectura de CSV, generación de informes y planificación segura del organizador.\n- [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.\n- [ ] Confirmar que la última ejecución de GitHub Actions finalice correctamente.\n- [ ] Ampliar las pruebas unitarias a persistencia JSON, validaciones y funciones matemáticas.
 - [ ] Añadir una plantilla común de README para cada proyecto.
 - [ ] Registrar versiones de Python y dependencias una vez realizadas pruebas locales.
 - [ ] Añadir un proyecto integrador que conecte interfaz gráfica, JSON y visualización.
