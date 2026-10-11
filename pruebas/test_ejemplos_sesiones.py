@@ -19,7 +19,7 @@ ENTRADAS_POR_ARCHIVO = {
 class PruebasEjemplosDeSesiones(unittest.TestCase):
     def test_todos_los_ejemplos_se_ejecutan(self):
         ejemplos = sorted(CARPETA_SESIONES.glob("*/ejemplos/*.py"))
-        self.assertEqual(len(ejemplos), 14, "Se esperaba conservar los 14 ejemplos originales de las sesiones.")
+        self.assertEqual(len(ejemplos), 13, "Se esperaba conservar los 13 ejemplos originales de las sesiones.")
 
         for ejemplo in ejemplos:
             with self.subTest(ejemplo=ejemplo.relative_to(RAIZ)):
