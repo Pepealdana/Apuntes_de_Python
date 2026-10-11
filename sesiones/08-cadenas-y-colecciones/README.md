@@ -124,3 +124,12 @@ Recorre una palabra convertida a minúsculas y cuenta cuántas letras son vocale
 ## Próxima sesión
 
 **Funciones:** organizar instrucciones reutilizables.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Guarda las actividades en una lista. Cada actividad puede representarse con un diccionario que incluya nombre, área, cantidad y costo total. Usa operaciones de cadenas para limpiar espacios y normalizar una respuesta sencilla.
+
+**Criterio de revisión:** puedes recorrer la lista y mostrar cada actividad sin depender de variables independientes para cada registro.
+
+**Evidencia:** añade tres registros ficticios y muestra un resumen de todos ellos.
