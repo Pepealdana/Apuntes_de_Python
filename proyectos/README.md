@@ -35,7 +35,7 @@ Los proyectos de esta carpeta son puntos de partida ejecutables para experimenta
 
 | Proyecto | Requisito | Qué permite practicar |
 |---|---|---|
-| [Lista de tareas web](web/app_tareas_flask.py) | `flask` | Rutas, formularios, validación y JSON |
+| [Lista de tareas web](web/app_tareas_flask.py) | `flask` | Rutas, formularios, validación y JSON |\n| [API REST de tareas](web/api_tareas.py) | `flask` | GET, POST, PATCH, DELETE y respuestas JSON |
 | [Redimensionar imágenes](imagenes/redimensionar_imagen.py) | `pillow` | Proporciones, formatos y copias seguras |
 | [Simulación de proyectil](ciencia/simulacion_proyectil.py) | `matplotlib` | Modelo matemático, CSV y gráfica |
 | [Clasificador Iris](ia/clasificador_iris.py) | `scikit-learn` | Entrenamiento, prueba y métricas |
