@@ -17,6 +17,8 @@ Ruta de aprendizaje práctica. Las sesiones 1–12 conservan sus explicaciones y
 | [11. Errores y excepciones](11-errores-y-excepciones/README.md) | Validación y errores controlados | Estructurada + práctica acumulativa |
 | [12. Mini proyecto de preguntas](12-mini-proyecto-preguntas/README.md) | Concurso de consola que integra fundamentos | Estructurada + práctica acumulativa |
 
+La estructura recomendada para nuevas sesiones está en la [plantilla común](../PLANTILLA_SESION.md). Las sesiones actuales comparten objetivo, conceptos, ejemplo, práctica o experimentación, retos, diagnóstico de errores, cierre, criterios de logro y práctica acumulativa; se mantienen pequeñas variaciones cuando el tipo de actividad lo requiere.
+
 ## Apuntes originales conservados
 
 Estos archivos están en la raíz del repositorio y se mantienen como referencia durante la migración:
