@@ -38,3 +38,8 @@ Estos archivos están en la raíz del repositorio y se mantienen como referencia
 ## Nota sobre los apuntes anteriores
 
 Los archivos originales ubicados en la raíz del repositorio se conservan como material de referencia durante la migración. No se eliminan hasta verificar que sus conceptos, actividades y ejemplos útiles estén incorporados en la nueva estructura. Las correcciones se documentarán en las sesiones nuevas.
+
+
+## Después de las 12 sesiones
+
+La base común continúa con las [rutas aplicadas de Python](../rutas/README.md). Puedes comenzar por [interfaces gráficas](../rutas/interfaces-graficas/README.md), [juegos 2D con Pygame](../rutas/juegos/README.md), [automatización](../rutas/automatizacion/README.md), [datos y gráficas](../rutas/datos-y-graficas/README.md) o [web y APIs](../rutas/web-y-apis/README.md). No es necesario estudiar todas las rutas: elige una según el proyecto que quieras construir.
