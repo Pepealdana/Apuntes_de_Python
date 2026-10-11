@@ -130,3 +130,14 @@ Responde con tus propias palabras:
 ## Próxima sesión
 
 **Mostrar información con `print()`:** presentar texto, variables y expresiones de manera clara.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Esta práctica se ampliará en las sesiones siguientes. Utiliza únicamente datos ficticios.
+
+Crea un archivo `aula_organizada.py` con variables para el nombre de una actividad, el área, la cantidad de materiales y si la actividad está lista. Imprime sus tipos con `type()`.
+
+**Criterio de revisión:** los nombres son claros, los tipos corresponden a los datos y el programa se ejecuta sin errores.
+
+**Evidencia:** guarda el archivo y escribe qué variables podrían cambiar durante la ejecución y cuáles representan información fija.
