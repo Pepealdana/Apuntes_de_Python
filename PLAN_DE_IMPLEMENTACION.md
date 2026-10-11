@@ -8,8 +8,8 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Conservar los apuntes originales durante la migración.
 - [x] Mantener una comprobación automática de sintaxis.
 - [x] Añadir una práctica acumulativa que evoluciona de variables a un proyecto con JSON a lo largo de las sesiones 1–12.
+- [x] Añadir una plantilla didáctica común y enlazarla desde el índice de sesiones.
 - [ ] Revisar cada ejemplo Python contra su explicación y corregir posibles discrepancias.
-- [x] Añadir una plantilla didáctica común y enlazarla desde el índice de sesiones.\n- [x] Incorporar prácticas acumulativas en las sesiones 1–12.\n- [ ] Revisar cada ejemplo Python contra su explicación y corregir posibles discrepancias.
 - [ ] Añadir ejercicios de repaso acumulativo después de las sesiones 4, 8 y 12.
 
 ## Fase 2 — Organización y herramientas
@@ -17,8 +17,11 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Definir una ruta general de aprendizaje.
 - [x] Crear un catálogo de rutas aplicadas.
 - [x] Añadir una guía de entornos virtuales, pip y errores de instalación.
-- [ ] Documentar depuración en VS Code, pruebas con unittest y uso básico de Git.
-- [x] Establecer una plantilla común para nuevas sesiones.\n- [ ] Establecer una plantilla común de README para nuevos proyectos.
+- [x] Crear pruebas iniciales con la biblioteca estándar.
+- [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.
+- [ ] Confirmar que la última ejecución de GitHub Actions finalice correctamente.
+- [ ] Documentar depuración en VS Code y uso básico de Git.
+- [ ] Establecer una plantilla común de README para nuevos proyectos.
 
 ## Fase 3 — CustomTkinter
 
@@ -26,9 +29,9 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Calculadora con suma, resta, multiplicación, división y validación.
 - [x] Formulario con campos obligatorios y almacenamiento CSV.
 - [x] Gestor de actividades con lectura, escritura y eliminación en JSON.
+- [x] Selector de actividad y confirmación antes de eliminar; evitar guardar si el JSON inicial está dañado.
 - [ ] Ejecutar cada ventana en un entorno gráfico real.
 - [ ] Probar entradas inválidas, archivos JSON dañados y errores de escritura.
-- [ ] Mejorar el selector de registros del gestor JSON y añadir confirmación antes de eliminar.
 
 ## Fase 4 — Pygame
 
@@ -44,27 +47,28 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Informe CSV que valida filas y genera resumen de texto y CSV.
 - [x] Archivo de mediciones ficticias con registros válidos y filas defectuosas.
 - [x] Gráfica basada en CSV con avisos por filas omitidas.
-- [ ] Ejecutar sobre una carpeta temporal y comparar los resultados con cálculos manuales.
-- [ ] Añadir pruebas automatizadas para CSV vacío, columnas faltantes, datos inválidos y rutas inexistentes.
+- [x] Pruebas unitarias para validación CSV, informes y planificación segura de archivos.
+- [ ] Ejecutar los programas con archivos de prueba y comparar resultados con cálculos manuales.
+- [ ] Añadir pruebas para CSV vacío, columnas faltantes, rutas inexistentes y errores de escritura.
 - [ ] Documentar salidas generadas y evitar subir datos personales reales.
 
 ## Fase 6 — Web, imágenes, ciencia e IA
 
 - [x] Aplicación local Flask para agregar, consultar, completar y eliminar tareas con persistencia JSON.
+- [x] API REST local con GET, POST, PATCH y DELETE, validación y persistencia JSON.
 - [x] Herramienta Pillow que redimensiona una copia de imagen sin sobrescribir por defecto.
 - [x] Simulación de proyectil con CSV y gráfica, indicando los supuestos del modelo.
 - [x] Clasificador Iris con scikit-learn, conjunto de prueba y métricas.
-- [ ] Ejecutar y probar las rutas de la aplicación Flask.
+- [x] Pruebas unitarias para las reglas matemáticas de la trayectoria ideal.
+- [ ] Ejecutar y probar las rutas de la aplicación Flask y de la API.
 - [ ] Probar Pillow con imágenes reales de distintos formatos y orientaciones.
 - [ ] Comparar la simulación con cálculos independientes.
 - [ ] Ejecutar el clasificador y explicar la matriz de confusión y los límites de las métricas.
-- [ ] Añadir pruebas automatizadas a la lógica que no dependa de ventanas ni de servicios externos.
-- [ ] Crear una aplicación consumidora de una API pública con timeout, manejo de errores y fuente de datos documentada.
+- [ ] Añadir un cliente de API pública con timeout, manejo de errores y fuente de datos documentada.
 
 ## Fase 7 — Calidad y proyectos integradores
 
-- [x] Añadir pruebas unitarias iniciales para lectura de CSV, generación de informes y planificación segura del organizador.\n- [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.\n- [ ] Confirmar que la última ejecución de GitHub Actions finalice correctamente.\n- [x] Añadir pruebas unitarias para las reglas matemáticas de la trayectoria ideal.\n- [ ] Ampliar las pruebas unitarias a persistencia JSON y validaciones de aplicaciones.
-- [ ] Añadir una plantilla común de README para cada proyecto.
+- [ ] Ampliar las pruebas unitarias a persistencia JSON y validaciones de aplicaciones.
 - [ ] Registrar versiones de Python y dependencias una vez realizadas pruebas locales.
 - [ ] Añadir un proyecto integrador que conecte interfaz gráfica, JSON y visualización.
 - [ ] Mantener comunicación serial con Arduino como una ruta opcional, no como requisito para aprender Python.
@@ -79,4 +83,4 @@ Un proyecto solo se marcará como verificado cuando:
 5. las salidas generadas se hayan revisado;
 6. cualquier limitación conocida quede documentada.
 
-La comprobación automática de sintaxis no demuestra que una interfaz se vea correctamente ni que un juego, una aplicación web o una biblioteca externa funcione en el equipo del estudiante.
+La comprobación automática de sintaxis y las pruebas unitarias no demuestran que una interfaz se vea correctamente ni que un juego, una aplicación web o una biblioteca externa funcione en el equipo del estudiante.
