@@ -56,10 +56,10 @@ Las sesiones mantienen el orden real de aprendizaje: sintaxis y variables, salid
 
 - Se separó la lógica matemática de la calculadora de su interfaz para poder probar las cuatro operaciones sin abrir una ventana.
 - Se añadieron validaciones para rechazar `NaN`, infinito y parámetros no finitos en la calculadora, el simulador de proyectil y los procesadores de mediciones CSV.
-- Se añadieron pruebas de humo para ejecutar los 14 ejemplos Python de las sesiones 1–12 con entradas controladas.
+- Se añadieron pruebas de humo para ejecutar los 13 ejemplos Python de las sesiones 1–12 con entradas controladas.
 - Se ampliaron las pruebas de CSV, calculadora, formulario y parámetros científicos.
 - Se añadieron avisos de licencia separados para el material educativo y el código fuente.
-- Se revisarán y corregirán los enlaces internos y las instrucciones de instalación/ejecución en el README principal y catálogos.
+- Se corrigieron las instrucciones del README principal y el catálogo de proyectos; se añadió una prueba automatizada para detectar enlaces internos Markdown rotos.
 
 ## 4. Licencias
 
