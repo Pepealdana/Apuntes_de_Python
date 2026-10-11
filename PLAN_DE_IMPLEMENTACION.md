@@ -63,7 +63,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 
 ## Fase 7 — Calidad y proyectos integradores
 
-- [x] Añadir pruebas unitarias iniciales para lectura de CSV, generación de informes y planificación segura del organizador.\n- [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.\n- [ ] Confirmar que la última ejecución de GitHub Actions finalice correctamente.\n- [ ] Ampliar las pruebas unitarias a persistencia JSON, validaciones y funciones matemáticas.
+- [x] Añadir pruebas unitarias iniciales para lectura de CSV, generación de informes y planificación segura del organizador.\n- [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.\n- [ ] Confirmar que la última ejecución de GitHub Actions finalice correctamente.\n- [x] Añadir pruebas unitarias para las reglas matemáticas de la trayectoria ideal.\n- [ ] Ampliar las pruebas unitarias a persistencia JSON y validaciones de aplicaciones.
 - [ ] Añadir una plantilla común de README para cada proyecto.
 - [ ] Registrar versiones de Python y dependencias una vez realizadas pruebas locales.
 - [ ] Añadir un proyecto integrador que conecte interfaz gráfica, JSON y visualización.
