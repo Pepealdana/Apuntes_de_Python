@@ -67,7 +67,7 @@ Este documento diferencia el código incorporado, las comprobaciones automatizad
 - [x] Añadir pruebas de humo de los ejemplos de las 12 sesiones.
 - [x] Ampliar las pruebas de lógica, persistencia, entradas inválidas y generación de archivos.
 - [x] Actualizar README, catálogo de proyectos y documentación de auditoría.
-- [ ] Confirmar la ejecución de GitHub Actions para esta revisión.
+- [x] Confirmar GitHub Actions para esta revisión: [ejecución #47](https://github.com/Pepealdana/Apuntes_de_Python/actions/runs/38158313719), con 30 pruebas aprobadas.
 - [ ] Completar el checklist manual de Windows incluido en `AUDITORIA_DIDACTICA_Y_TECNICA.md`.
 - [ ] Actualizar este plan y el informe con los resultados reales de las pruebas manuales.
 
