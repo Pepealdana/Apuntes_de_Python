@@ -11,7 +11,6 @@ import csv
 import math
 from pathlib import Path
 
-import matplotlib.pyplot as plt
 
 
 GRAVEDAD = 9.81
@@ -57,6 +56,8 @@ def main():
         escritor = csv.DictWriter(archivo, fieldnames=["tiempo_s", "x_m", "y_m"])
         escritor.writeheader()
         escritor.writerows(trayectoria)
+
+    import matplotlib.pyplot as plt
 
     alcance = trayectoria[-1]["x_m"]
     altura = max(punto["y_m"] for punto in trayectoria)
