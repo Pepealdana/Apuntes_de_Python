@@ -34,7 +34,7 @@ Cada módulo tendrá, según lo que necesite, propósito, conceptos, preparació
 
 No es necesario terminar toda la ruta común antes de explorar un campo de aplicación. Los proyectos volverán a los fundamentos cuando lo necesiten.
 
-Consulta la [ruta general de aprendizaje](RUTA_GENERAL.md) para ver las etapas y la secuencia recomendada.
+Consulta la [ruta general de aprendizaje](RUTA_GENERAL.md) para ver las etapas y la secuencia recomendada. Antes de instalar bibliotecas externas, revisa la [guía de entorno virtual e instalación](GUIA_ENTORNO.md).
 
 ## Campos de aplicación
 
