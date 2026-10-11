@@ -118,3 +118,12 @@ Guarda en JSON el nombre de un proyecto, su estado y una lista de tareas.
 ## Próxima sesión
 
 **Errores y excepciones:** responder de forma controlada cuando algo falla.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Guarda y recupera las actividades en JSON. Como extensión, exporta una tabla CSV para abrirla en una hoja de cálculo. No sobrescribas archivos de usuario sin avisar y conserva una copia de los datos de prueba.
+
+**Criterio de revisión:** el programa puede recuperar los registros en otra ejecución y trata de forma comprensible el caso en que el archivo todavía no existe.
+
+**Evidencia:** guarda dos actividades, cierra el programa y vuelve a ejecutarlo para comprobar que los datos se recuperan.
