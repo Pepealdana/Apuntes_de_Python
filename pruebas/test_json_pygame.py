@@ -12,6 +12,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "proyectos" / "interfaces"))
 sys.path.insert(0, str(RAIZ / "proyectos" / "juegos"))
 import gestor_actividades_json  # noqa: E402
+import pygame  # noqa: E402
 import pygame_recolectar  # noqa: E402
 
 
