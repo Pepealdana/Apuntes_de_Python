@@ -18,12 +18,14 @@ class PruebasTrayectoria(unittest.TestCase):
         self.assertGreater(max(p["y_m"] for p in puntos), 0.0)
 
     def test_rechaza_parametros_invalidos(self):
-        with self.assertRaises(ValueError):
-            calcular_trayectoria(0, 45)
-        with self.assertRaises(ValueError):
-            calcular_trayectoria(10, 90)
-        with self.assertRaises(ValueError):
-            calcular_trayectoria(10, 45, puntos=1)
+        for velocidad, angulo, cantidad in [
+            (0, 45, 101), (10, 90, 101), (10, 45, 1),
+            (float("nan"), 45, 101), (10, float("inf"), 101),
+            (10, 45, 2.5),
+        ]:
+            with self.subTest(velocidad=velocidad, angulo=angulo, cantidad=cantidad):
+                with self.assertRaises(ValueError):
+                    calcular_trayectoria(velocidad, angulo, puntos=cantidad)
 
 
 if __name__ == "__main__":
