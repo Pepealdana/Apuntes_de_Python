@@ -9,7 +9,7 @@ Este documento diferencia el código incorporado, las comprobaciones automatizad
 - [x] Añadir la práctica acumulativa «Aula organizada» sin reemplazar los ejercicios originales.
 - [x] Crear una plantilla común para nuevas sesiones.
 - [x] Revisar por lectura didáctica la correspondencia entre tema, ejemplo y retos de las 12 sesiones.
-- [x] Añadir pruebas de humo para ejecutar los 14 ejemplos de consola con entradas controladas.
+- [x] Añadir pruebas de humo para ejecutar los 13 ejemplos de consola con entradas controladas.
 - [ ] Añadir ejercicios de repaso acumulativo después de las sesiones 4, 8 y 12.
 
 ## Fase 2 — Entorno y documentación
