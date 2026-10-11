@@ -104,3 +104,12 @@ Crea una función que reciba una lista de números y devuelva su suma. Pruébala
 ## Próxima sesión
 
 **Archivos y datos persistentes:** guardar información para usarla después de cerrar el programa.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Divide el programa en funciones pequeñas. Como mínimo, crea una función para solicitar o preparar los datos, otra para calcular el costo y otra para mostrar una actividad. Las funciones de cálculo deberían recibir parámetros y devolver resultados cuando sea apropiado.
+
+**Criterio de revisión:** evita duplicar lógica y puedes explicar qué recibe y qué devuelve cada función.
+
+**Evidencia:** llama a la función de cálculo con dos conjuntos de valores diferentes sin duplicar su código.
