@@ -8,6 +8,6 @@ Desde la raíz del repositorio ejecuta:
 python -m unittest discover -s pruebas -v
 ```
 
-La suite actual cubre la validación de CSV, la generación de informes y la planificación segura del organizador de archivos. No mueve archivos reales ni requiere instalar bibliotecas externas.
+La suite actual cubre la validación de CSV, la generación de informes, la planificación segura del organizador de archivos y las reglas matemáticas básicas de la trayectoria ideal. No mueve archivos reales ni requiere instalar bibliotecas externas.
 
 La suite debe crecer con pruebas para la persistencia JSON, validaciones de formularios y funciones matemáticas. Las interfaces gráficas y Pygame requieren además pruebas manuales en un entorno con escritorio.
