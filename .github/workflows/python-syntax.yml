@@ -20,5 +20,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Check syntax of lessons and practical projects
-        run: python -m compileall -q sesiones proyectos
+      - name: Check syntax of lessons, projects and tests
+        run: python -m compileall -q sesiones proyectos pruebas
+      - name: Run unit tests
+        run: python -m unittest discover -s pruebas -v
