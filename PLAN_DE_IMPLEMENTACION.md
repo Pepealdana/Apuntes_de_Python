@@ -19,7 +19,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Añadir una guía de entornos virtuales, pip y errores de instalación.
 - [x] Crear pruebas iniciales con la biblioteca estándar.
 - [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.
-- [ ] Confirmar que la última ejecución de GitHub Actions finalice correctamente.
+- [x] Confirmar una ejecución correcta de GitHub Actions; la suite se amplió y quedó configurada para Python 3.12. La ejecución más reciente de la suite ampliada debe volver a confirmarse tras cada cambio.
 - [ ] Documentar depuración en VS Code y uso básico de Git.
 - [ ] Establecer una plantilla común de README para nuevos proyectos.
 
@@ -31,7 +31,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Gestor de actividades con lectura, escritura y eliminación en JSON.
 - [x] Selector de actividad y confirmación antes de eliminar; evitar guardar si el JSON inicial está dañado.
 - [ ] Ejecutar cada ventana en un entorno gráfico real.
-- [ ] Probar entradas inválidas, archivos JSON dañados y errores de escritura.
+- [x] Añadir pruebas automáticas de lectura/escritura JSON y estructura incorrecta.\n- [ ] Probar ventanas, entradas inválidas y errores de escritura en escritorio real.
 
 ## Fase 4 — Pygame
 
@@ -39,7 +39,7 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Juego de recolección con colisiones, puntuación, vidas, victoria y reinicio.
 - [ ] Ejecutar el juego e inspeccionar la dificultad y la respuesta del teclado.
 - [ ] Probar colisiones repetidas, reinicio y cierre de ventana.
-- [ ] Añadir pantalla inicial y pruebas de lógica separadas del bucle gráfico.
+- [x] Añadir una prueba automatizada del estado inicial y la distribución de elementos fuera del bucle gráfico.\n- [ ] Añadir pantalla inicial y probar teclado, colisiones, reinicio y cierre en escritorio real.
 
 ## Fase 5 — Automatización y datos
 
@@ -47,8 +47,8 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Informe CSV que valida filas y genera resumen de texto y CSV.
 - [x] Archivo de mediciones ficticias con registros válidos y filas defectuosas.
 - [x] Gráfica basada en CSV con avisos por filas omitidas.
-- [x] Pruebas unitarias para validación CSV, informes y planificación segura de archivos.
-- [ ] Ejecutar los programas con archivos de prueba y comparar resultados con cálculos manuales.
+- [x] Pruebas unitarias para validación CSV, informes y planificación segura de archivos.\n- [x] Añadir pruebas para lectura de series y generación de gráficas con CSV de prueba.
+- [x] Automatizar el procesamiento de CSV de prueba y la generación de una gráfica en archivos temporales.\n- [ ] Comparar los resultados de negocio con cálculos manuales y revisar salidas en el equipo local.
 - [ ] Añadir pruebas para CSV vacío, columnas faltantes, rutas inexistentes y errores de escritura.
 - [ ] Documentar salidas generadas y evitar subir datos personales reales.
 
@@ -60,15 +60,15 @@ Este plan distingue entre guías y código incorporados, comprobaciones automát
 - [x] Simulación de proyectil con CSV y gráfica, indicando los supuestos del modelo.
 - [x] Clasificador Iris con scikit-learn, conjunto de prueba y métricas.
 - [x] Pruebas unitarias para las reglas matemáticas de la trayectoria ideal.
-- [ ] Ejecutar y probar las rutas de la aplicación Flask y de la API.
-- [ ] Probar Pillow con imágenes reales de distintos formatos y orientaciones.
-- [ ] Comparar la simulación con cálculos independientes.
-- [ ] Ejecutar el clasificador y explicar la matriz de confusión y los límites de las métricas.
+- [x] Añadir pruebas de rutas CRUD, validaciones y persistencia JSON para la aplicación Flask y la API REST.\n- [ ] Repetir el flujo desde navegador y cliente HTTP en ejecución local.
+- [x] Añadir pruebas automáticas de redimensionamiento, proporción y prevención de sobrescritura.\n- [ ] Probar imágenes reales de distintos formatos y orientaciones en el equipo local.
+- [x] Añadir prueba de integración para exportar CSV y gráfica científica.\n- [ ] Comparar la simulación con cálculos independientes.
+- [x] Añadir prueba automatizada de ejecución del clasificador y generación de métricas.\n- [ ] Revisar los resultados del clasificador y explicar la matriz de confusión.
 - [ ] Añadir un cliente de API pública con timeout, manejo de errores y fuente de datos documentada.
 
 ## Fase 7 — Calidad y proyectos integradores
 
-- [ ] Ampliar las pruebas unitarias a persistencia JSON y validaciones de aplicaciones.
+- [x] Ampliar las pruebas a JSON, rutas Flask/API, imágenes, gráficas, ciencia, clasificador y lógica inicial de Pygame.\n- [ ] Añadir casos de error adicionales para archivos corruptos, permisos y rutas inexistentes.
 - [ ] Registrar versiones de Python y dependencias una vez realizadas pruebas locales.
 - [ ] Añadir un proyecto integrador que conecte interfaz gráfica, JSON y visualización.
 - [ ] Mantener comunicación serial con Arduino como una ruta opcional, no como requisito para aprender Python.
