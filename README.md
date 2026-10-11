@@ -60,6 +60,10 @@ Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en ord
 - [Sesión 3: Recibir información con input()](sesiones/03-entrada-input/README.md)
 - [Sesión 4: Operadores](sesiones/04-operadores/README.md)
 - [Sesión 5: Práctica integradora](sesiones/05-practica-integradora/README.md)
+- [Sesión 6: Condicionales](sesiones/06-condicionales/README.md)
+- [Sesión 7: Ciclos](sesiones/07-ciclos/README.md)
+- [Sesión 8: Cadenas y colecciones](sesiones/08-cadenas-y-colecciones/README.md)
+- [Sesión 9: Funciones](sesiones/09-funciones/README.md)
 
 ## Entorno recomendado
 
