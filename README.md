@@ -90,7 +90,7 @@ Los proyectos están incorporados en el repositorio, pero no todos han sido ejec
 - Visual Studio Code
 - Extensión oficial de Python para VS Code
 
-Las sesiones iniciales no requieren bibliotecas externas. Cada nueva herramienta tendrá instrucciones de instalación y un ejemplo pequeño antes de convertirse en requisito. GitHub Actions comprueba la sintaxis de los scripts Python incluidos en las carpetas de sesiones y proyectos; esa comprobación no sustituye las pruebas de ejecución.
+Las sesiones iniciales no requieren bibliotecas externas. Cada nueva herramienta tendrá instrucciones de instalación y un ejemplo pequeño antes de convertirse en requisito. GitHub Actions comprueba la sintaxis de los scripts en sesiones, proyectos y pruebas, y ejecuta las pruebas unitarias de la carpeta `pruebas/`. Estas comprobaciones no sustituyen las pruebas manuales de interfaces, juegos y aplicaciones web.
 
 ## Seguimiento
 
