@@ -22,6 +22,7 @@ env/
 salida_sesion10/
 
 # Datos y resultados generados por proyectos
+mediciones_ejemplo.csv
 salida_reporte/
 salida_ciencia/
 imagenes_generadas/
