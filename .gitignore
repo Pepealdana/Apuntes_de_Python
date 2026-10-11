@@ -20,3 +20,16 @@ env/
 
 # Archivos generados por el ejemplo de la sesión 10
 salida_sesion10/
+
+# Datos y resultados generados por proyectos
+salida_reporte/
+salida_ciencia/
+imagenes_generadas/
+tareas_web.json
+registros_formulario.csv
+actividades.json
+*.json.tmp
+
+# Entornos y cachés adicionales
+.mypy_cache/
+.ruff_cache/
