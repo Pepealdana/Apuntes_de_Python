@@ -21,19 +21,19 @@ Un comentario comienza con `#`. Python lo ignora al ejecutar el programa.
 
 ```python
 # Este comentario explica la siguiente instrucción.
-nombre = "Peters"
+nombre = "Ada"
 ```
 
-Las comillas triples (`'''...'''` o `"""..."""`) crean cadenas multilínea. No son comentarios por sí mismas; pueden utilizarse como documentación cuando ocupan la posición adecuada, por ejemplo al inicio de un módulo o función.
+Las comillas triples (`'''...`` o `"""..."""`) crean cadenas multilínea. No son comentarios por sí mismas; pueden utilizarse como documentación cuando ocupan la posición adecuada, por ejemplo al inicio de un módulo o función.
 
 ### Variables
 
 Una variable es un nombre asociado a un valor. En Python no es necesario declarar por adelantado el tipo.
 
 ```python
-nombre = "Peters"
-edad = 40
-estatura_m = 1.78
+nombre = "Ada"
+edad = 17
+estatura_m = 1.68
 esta_activo = True
 ```
 
@@ -130,7 +130,6 @@ Responde con tus propias palabras:
 ## Próxima sesión
 
 **Mostrar información con `print()`:** presentar texto, variables y expresiones de manera clara.
-
 
 ## Práctica acumulativa — Proyecto: Aula organizada
 
