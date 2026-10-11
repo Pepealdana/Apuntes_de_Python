@@ -8,6 +8,7 @@ en la carpeta actual. No modifica ni elimina archivos existentes.
 """
 
 import csv
+import math
 import sys
 from pathlib import Path
 
@@ -32,7 +33,7 @@ def crear_ejemplo_si_no_existe(ruta):
 
 
 def leer_puntajes(ruta):
-    """Lee puntajes numéricos y omite filas inválidas con aviso."""
+    """Lee puntajes numéricos finitos y omite filas inválidas con aviso."""
     puntajes = []
 
     with ruta.open("r", newline="", encoding="utf-8-sig") as archivo:
@@ -44,9 +45,12 @@ def leer_puntajes(ruta):
 
         for numero_fila, fila in enumerate(lector, start=2):
             try:
-                puntajes.append(float(fila["puntaje"]))
-            except (TypeError, ValueError):
-                print(f"Aviso: se omite el puntaje inválido de la fila {numero_fila}.")
+                puntaje = float(fila["puntaje"])
+                if not math.isfinite(puntaje):
+                    raise ValueError("el puntaje debe ser finito")
+                puntajes.append(puntaje)
+            except (TypeError, ValueError) as error:
+                print(f"Aviso: se omite el puntaje inválido de la fila {numero_fila}: {error}")
 
     return puntajes
 
