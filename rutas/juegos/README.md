@@ -21,7 +21,7 @@ Se recomienda crear un entorno virtual dentro del proyecto y ejecutar:
 python -m pip install pygame
 ```
 
-Comprueba la instalación con `python -m pygame --version`. Si el comando no funciona en una instalación concreta, revisa la documentación oficial y confirma que el paquete se instaló en el mismo intérprete que ejecuta el juego.
+Comprueba la instalación con `python -c "import pygame; print(pygame.version.ver)"`. Si falla, revisa la [guía de entorno](../../GUIA_ENTORNO.md) y confirma que el paquete se instaló en el mismo intérprete que ejecuta el juego.
 
 ## Proyectos graduados
 
