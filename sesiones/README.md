@@ -13,6 +13,19 @@ Ruta de aprendizaje práctica. Las sesiones nuevas se están construyendo a part
 | [07. Ciclos](07-ciclos/README.md) | Repeticiones con `for` y `while` | Nueva |
 | [08. Cadenas y colecciones](08-cadenas-y-colecciones/README.md) | Texto, listas y primera mirada a otras colecciones | Nueva |
 | [09. Funciones](09-funciones/README.md) | Parámetros, argumentos y valores de retorno | Nueva |
+| [10. Archivos y datos](10-archivos-y-datos/README.md) | Texto, CSV y JSON | Nueva |
+| [11. Errores y excepciones](11-errores-y-excepciones/README.md) | Validación y errores controlados | Nueva |
+| [12. Mini proyecto de preguntas](12-mini-proyecto-preguntas/README.md) | Concurso de consola que integra fundamentos | Nuevo |
+
+## Apuntes originales conservados
+
+Estos archivos están en la raíz del repositorio y se mantienen como referencia durante la migración:
+
+- [01. Sintaxis y variables](../01.%20SINTAXIS%20Y%20VARIABLES)
+- [02. Operadores](../02.%20OPERADORES)
+- [03. Print](../03.%20PRINT)
+- [04. ¿Qué he aprendido?](../04.%20%C2%BFQUE%20HE%20APRENDIDO%3F)
+- [05. Input](../05.%20INPUT)
 
 ## Cómo avanzar
 
