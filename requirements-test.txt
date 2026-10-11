@@ -1,0 +1,8 @@
+# Dependencias para pruebas funcionales automatizadas en GitHub Actions.
+# Las aplicaciones siguen documentando sus dependencias individuales.
+Flask
+Pillow
+matplotlib
+scikit-learn
+customtkinter
+pygame
