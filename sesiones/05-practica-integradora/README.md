@@ -69,3 +69,12 @@ Solicita por teclado el nombre del personaje y muestra la historia con ese nombr
 ## Siguiente paso
 
 Continuar con condicionales para que el programa tome decisiones a partir de los datos.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Integra las sesiones 1–4 en un solo programa: pide la actividad, el área, la cantidad y el costo unitario; calcula el total y muestra una ficha final. Mantén el ejercicio original de la historia del oso: esta actividad acumulativa es adicional, no lo reemplaza.
+
+**Criterio de revisión:** los datos se solicitan una vez, los cálculos usan las variables y el resultado es fácil de leer.
+
+**Evidencia:** explica en qué parte se utilizan variables, entrada, salida y operadores.
