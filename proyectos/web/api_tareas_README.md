@@ -4,12 +4,14 @@ Archivo: [api_tareas.py](api_tareas.py)
 
 ## Preparación
 
+Desde la raíz del repositorio:
+
 ```bash
 python -m pip install flask
 python proyectos/web/api_tareas.py
 ```
 
-La API queda disponible en la dirección local indicada por Flask, normalmente `http://127.0.0.1:5000`. Los datos se guardan en `api_tareas.json` en el directorio de trabajo.
+La API queda disponible en la dirección local indicada por Flask, normalmente `http://127.0.0.1:5000`. Los datos se guardan en `api_tareas.json` en el directorio de trabajo actual.
 
 ## Endpoints
 
@@ -54,8 +56,8 @@ curl -X DELETE http://127.0.0.1:5000/api/tareas/1
 - Diferencia entre una ruta de lectura y una que modifica información.
 - Persistencia de datos y manejo de errores.
 
-## Límites
+## Límites y seguridad
 
-Es una API didáctica de un solo proceso con archivo JSON, sin autenticación ni protección para despliegue público. No la expongas a internet ni guardes datos personales. En una aplicación real deben evaluarse autenticación, autorización, CSRF cuando corresponda, concurrencia, copias de seguridad y almacenamiento apropiado.
+Es una API didáctica de un solo proceso con archivo JSON, sin autenticación ni controles para despliegue público. No la expongas a internet ni guardes datos personales. En una aplicación real deben evaluarse autenticación, autorización, protección CSRF cuando corresponda, concurrencia, copias de seguridad y almacenamiento apropiado.
 
-**Estado:** código incorporado; faltan pruebas locales de los endpoints y los casos de error.
+**Validación:** las pruebas automatizadas ejercitan CRUD, validación y persistencia mediante el cliente de pruebas de Flask. Sigue pendiente arrancar el servidor y repetir las solicitudes desde `curl` en un equipo local.

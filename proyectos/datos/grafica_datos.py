@@ -8,7 +8,9 @@ El CSV debe contener las columnas fecha, grupo y medicion.
 """
 import argparse
 import csv
+import math
 from pathlib import Path
+
 import matplotlib.pyplot as plt
 
 CSV_POR_DEFECTO = Path("proyectos/datos/mediciones_prueba.csv")
@@ -28,6 +30,8 @@ def leer_series(ruta):
                 if not fecha or not grupo or not valor:
                     raise ValueError("campos vacíos")
                 numero_valor = float(valor)
+                if not math.isfinite(numero_valor):
+                    raise ValueError("la medición debe ser un número finito")
             except ValueError as error:
                 errores.append(f"Fila {numero}: {error}")
                 continue
@@ -62,6 +66,7 @@ def main():
     if args.salida:
         args.salida.parent.mkdir(parents=True, exist_ok=True)
         plt.savefig(args.salida, dpi=150)
+        plt.close()
         print(f"Gráfica guardada en: {args.salida}")
     else:
         plt.show()

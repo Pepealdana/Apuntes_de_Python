@@ -31,6 +31,17 @@ class PruebasGraficaDatos(unittest.TestCase):
             self.assertEqual(series["B"], [("2026-01-03", 4.0)])
             self.assertEqual(len(errores), 1)
 
+    def test_omite_valores_no_finitos(self):
+        with tempfile.TemporaryDirectory() as temporal:
+            ruta = Path(temporal) / "mediciones.csv"
+            ruta.write_text(
+                "fecha,grupo,medicion\n2026-01-01,A,2.5\n2026-01-02,A,nan\n",
+                encoding="utf-8",
+            )
+            series, errores = grafica_datos.leer_series(ruta)
+            self.assertEqual(series["A"], [("2026-01-01", 2.5)])
+            self.assertEqual(len(errores), 1)
+
     def test_genera_archivo_de_grafica(self):
         with tempfile.TemporaryDirectory() as temporal:
             carpeta = Path(temporal)

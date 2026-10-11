@@ -25,6 +25,17 @@ class PruebasReporteMediciones(unittest.TestCase):
             self.assertEqual(registros[0]["medicion"], 2.5)
             self.assertEqual(len(errores), 2)
 
+    def test_omite_valores_no_finitos(self):
+        with tempfile.TemporaryDirectory() as temporal:
+            ruta = Path(temporal) / "datos.csv"
+            ruta.write_text(
+                "fecha,grupo,medicion\n2026-01-01,A,2.5\n2026-01-02,A,nan\n2026-01-03,A,inf\n",
+                encoding="utf-8",
+            )
+            registros, errores = leer_mediciones(ruta)
+            self.assertEqual(len(registros), 1)
+            self.assertEqual(len(errores), 2)
+
     def test_falla_si_faltan_columnas_obligatorias(self):
         with tempfile.TemporaryDirectory() as temporal:
             ruta = Path(temporal) / "datos.csv"

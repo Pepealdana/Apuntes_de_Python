@@ -9,6 +9,7 @@ en la carpeta de salida indicada con --salida. Los datos del ejemplo son fictici
 
 import argparse
 import csv
+import math
 from pathlib import Path
 from statistics import mean
 
@@ -33,6 +34,8 @@ def leer_mediciones(ruta):
                 if not fecha or not grupo or not valor_texto:
                     raise ValueError("hay campos vacíos")
                 valor = float(valor_texto)
+                if not math.isfinite(valor):
+                    raise ValueError("la medición debe ser un número finito")
                 registros.append({"fecha": fecha, "grupo": grupo, "medicion": valor})
             except ValueError as error:
                 errores.append(f"Fila {numero}: {error}")

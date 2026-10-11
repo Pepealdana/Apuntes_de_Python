@@ -12,17 +12,16 @@ import math
 from pathlib import Path
 
 
-
 GRAVEDAD = 9.81
 
 
 def calcular_trayectoria(velocidad, angulo_grados, puntos=101):
-    if velocidad <= 0:
-        raise ValueError("La velocidad inicial debe ser positiva.")
-    if not 0 < angulo_grados < 90:
-        raise ValueError("El ángulo debe estar entre 0 y 90 grados.")
-    if puntos < 2:
-        raise ValueError("Se necesitan al menos dos puntos.")
+    if not math.isfinite(velocidad) or velocidad <= 0:
+        raise ValueError("La velocidad inicial debe ser un número finito y positivo.")
+    if not math.isfinite(angulo_grados) or not 0 < angulo_grados < 90:
+        raise ValueError("El ángulo debe ser un número finito entre 0 y 90 grados.")
+    if not isinstance(puntos, int) or isinstance(puntos, bool) or puntos < 2:
+        raise ValueError("La cantidad de puntos debe ser un entero igual o mayor que dos.")
 
     angulo = math.radians(angulo_grados)
     vx = velocidad * math.cos(angulo)
@@ -68,6 +67,7 @@ def main():
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(args.imagen, dpi=150)
+    plt.close()
     print(f"Alcance estimado: {alcance:.2f} m")
     print(f"Altura máxima aproximada: {altura:.2f} m")
     print(f"CSV: {args.csv}")
