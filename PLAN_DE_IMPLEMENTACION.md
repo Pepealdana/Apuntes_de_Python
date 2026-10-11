@@ -1,86 +1,83 @@
-# Plan de implementación del repositorio
+# Plan de implementación y control de calidad
 
-Este plan distingue entre guías y código incorporados, comprobaciones automáticas y pruebas prácticas pendientes. La presencia de un archivo no demuestra que se haya ejecutado correctamente en un equipo de escritorio.
+Este documento diferencia el código incorporado, las comprobaciones automatizadas y las pruebas manuales pendientes. No se marca una interfaz como probada visualmente por el hecho de que su archivo compile.
 
-## Fase 1 — Fundamentos
+## Fase 1 — Fundamentos didácticos
 
-- [x] Mantener las sesiones 1–12 como ruta inicial.
 - [x] Conservar los apuntes originales durante la migración.
-- [x] Mantener una comprobación automática de sintaxis.
-- [x] Añadir una práctica acumulativa que evoluciona de variables a un proyecto con JSON a lo largo de las sesiones 1–12.
-- [x] Añadir una plantilla didáctica común y enlazarla desde el índice de sesiones.
-- [ ] Revisar cada ejemplo Python contra su explicación y corregir posibles discrepancias.
+- [x] Organizar las sesiones 1–12 y mantener sus ejemplos.
+- [x] Añadir la práctica acumulativa «Aula organizada» sin reemplazar los ejercicios originales.
+- [x] Crear una plantilla común para nuevas sesiones.
+- [x] Revisar por lectura didáctica la correspondencia entre tema, ejemplo y retos de las 12 sesiones.
+- [x] Añadir pruebas de humo para ejecutar los 14 ejemplos de consola con entradas controladas.
 - [ ] Añadir ejercicios de repaso acumulativo después de las sesiones 4, 8 y 12.
 
-## Fase 2 — Organización y herramientas
+## Fase 2 — Entorno y documentación
 
-- [x] Definir una ruta general de aprendizaje.
-- [x] Crear un catálogo de rutas aplicadas.
-- [x] Añadir una guía de entornos virtuales, pip y errores de instalación.
-- [x] Crear pruebas iniciales con la biblioteca estándar.
-- [x] Configurar GitHub Actions para compilar sesiones, proyectos y pruebas y ejecutar `unittest`.
-- [x] Confirmar una ejecución correcta de GitHub Actions; la suite se amplió y quedó configurada para Python 3.12. La ejecución más reciente de la suite ampliada debe volver a confirmarse tras cada cambio.
+- [x] Documentar entornos virtuales, instalación de dependencias y errores frecuentes.
+- [x] Mantener un catálogo de rutas aplicadas y proyectos.
+- [x] Actualizar el README principal y el catálogo de proyectos.
+- [x] Añadir el informe de auditoría didáctica y técnica.
+- [x] Definir licencias separadas para material educativo y código.
 - [ ] Documentar depuración en VS Code y uso básico de Git.
-- [ ] Establecer una plantilla común de README para nuevos proyectos.
+- [ ] Establecer una plantilla común de README para todos los proyectos nuevos.
 
-## Fase 3 — CustomTkinter
+## Fase 3 — Interfaces gráficas
 
-- [x] Ejemplo inicial de CustomTkinter.
-- [x] Calculadora con suma, resta, multiplicación, división y validación.
-- [x] Formulario con campos obligatorios y almacenamiento CSV.
-- [x] Gestor de actividades con lectura, escritura y eliminación en JSON.
-- [x] Selector de actividad y confirmación antes de eliminar; evitar guardar si el JSON inicial está dañado.
-- [ ] Ejecutar cada ventana en un entorno gráfico real.
-- [x] Añadir pruebas automáticas de lectura/escritura JSON y estructura incorrecta.\n- [ ] Probar ventanas, entradas inválidas y errores de escritura en escritorio real.
+- [x] Incorporar ejemplos Tkinter y CustomTkinter.
+- [x] Incorporar calculadora, formulario CSV y gestor de actividades JSON.
+- [x] Separar la lógica de operaciones de la calculadora para poder probarla sin abrir la ventana.
+- [x] Probar la persistencia CSV del formulario y la persistencia JSON del gestor.
+- [ ] Ejecutar ventanas en Windows y comprobar campos, botones, dimensiones y mensajes.
+- [ ] Probar errores de permisos de escritura desde el entorno gráfico.
 
 ## Fase 4 — Pygame
 
-- [x] Ejemplo inicial de movimiento.
-- [x] Juego de recolección con colisiones, puntuación, vidas, victoria y reinicio.
-- [ ] Ejecutar el juego e inspeccionar la dificultad y la respuesta del teclado.
-- [ ] Probar colisiones repetidas, reinicio y cierre de ventana.
-- [x] Añadir una prueba automatizada del estado inicial y la distribución de elementos fuera del bucle gráfico.\n- [ ] Añadir pantalla inicial y probar teclado, colisiones, reinicio y cierre en escritorio real.
+- [x] Incorporar ejemplo de movimiento y juego de recolección.
+- [x] Probar automáticamente el estado inicial del juego y la distribución inicial de elementos.
+- [ ] Probar teclado, límites, colisiones repetidas, vidas, victoria, reinicio y cierre en escritorio real.
+- [ ] Revisar visualmente dificultad, instrucciones y presentación en distintos tamaños de pantalla.
 
-## Fase 5 — Automatización y datos
+## Fase 5 — Automatización, CSV y gráficas
 
-- [x] Organizador de archivos con modo simulación predeterminado.
-- [x] Informe CSV que valida filas y genera resumen de texto y CSV.
-- [x] Archivo de mediciones ficticias con registros válidos y filas defectuosas.
-- [x] Gráfica basada en CSV con avisos por filas omitidas.
-- [x] Pruebas unitarias para validación CSV, informes y planificación segura de archivos.\n- [x] Añadir pruebas para lectura de series y generación de gráficas con CSV de prueba.
-- [x] Automatizar el procesamiento de CSV de prueba y la generación de una gráfica en archivos temporales.\n- [ ] Comparar los resultados de negocio con cálculos manuales y revisar salidas en el equipo local.
-- [ ] Añadir pruebas para CSV vacío, columnas faltantes, rutas inexistentes y errores de escritura.
-- [ ] Documentar salidas generadas y evitar subir datos personales reales.
+- [x] Mantener el modo de simulación predeterminado del organizador.
+- [x] Probar la planificación y prevención de sobrescritura.
+- [x] Probar lectura, validación y generación de informes CSV/TXT.
+- [x] Probar la lectura de series y la exportación de gráficas.
+- [x] Rechazar valores numéricos no finitos (NaN e infinito) en los procesadores de mediciones.
+- [ ] Ejecutar el modo real del organizador solo con una carpeta temporal en Windows.
+- [ ] Revisar manualmente los archivos CSV, TXT y PNG generados.
+- [ ] Añadir pruebas específicas de permisos y errores de escritura.
 
 ## Fase 6 — Web, imágenes, ciencia e IA
 
-- [x] Aplicación local Flask para agregar, consultar, completar y eliminar tareas con persistencia JSON.
-- [x] API REST local con GET, POST, PATCH y DELETE, validación y persistencia JSON.
-- [x] Herramienta Pillow que redimensiona una copia de imagen sin sobrescribir por defecto.
-- [x] Simulación de proyectil con CSV y gráfica, indicando los supuestos del modelo.
-- [x] Clasificador Iris con scikit-learn, conjunto de prueba y métricas.
-- [x] Pruebas unitarias para las reglas matemáticas de la trayectoria ideal.
-- [x] Añadir pruebas de rutas CRUD, validaciones y persistencia JSON para la aplicación Flask y la API REST.\n- [ ] Repetir el flujo desde navegador y cliente HTTP en ejecución local.
-- [x] Añadir pruebas automáticas de redimensionamiento, proporción y prevención de sobrescritura.\n- [ ] Probar imágenes reales de distintos formatos y orientaciones en el equipo local.
-- [x] Añadir prueba de integración para exportar CSV y gráfica científica.\n- [ ] Comparar la simulación con cálculos independientes.
-- [x] Añadir prueba automatizada de ejecución del clasificador y generación de métricas.\n- [ ] Revisar los resultados del clasificador y explicar la matriz de confusión.
-- [ ] Añadir un cliente de API pública con timeout, manejo de errores y fuente de datos documentada.
+- [x] Incorporar aplicación Flask y API REST local con persistencia JSON.
+- [x] Probar operaciones CRUD, validación de datos y persistencia con el cliente de pruebas de Flask.
+- [x] Probar redimensionamiento de imágenes, proporción y prevención de sobrescritura.
+- [x] Probar generación de CSV y PNG de la simulación científica.
+- [x] Probar ejecución del clasificador Iris y su reporte de métricas.
+- [x] Rechazar valores no finitos en la calculadora, el simulador y los procesadores de mediciones.
+- [ ] Probar Flask desde un navegador local y la API con `curl`.
+- [ ] Probar Pillow con imágenes reales de diferentes formatos y orientaciones EXIF.
+- [ ] Interpretar la matriz de confusión del clasificador con estudiantes.
+- [ ] Comparar la simulación con cálculos independientes y discutir sus supuestos.
 
-## Fase 7 — Calidad y proyectos integradores
+## Fase 7 — Validación de publicación
 
-- [x] Ampliar las pruebas a JSON, rutas Flask/API, imágenes, gráficas, ciencia, clasificador y lógica inicial de Pygame.\n- [ ] Añadir casos de error adicionales para archivos corruptos, permisos y rutas inexistentes.
-- [ ] Registrar versiones de Python y dependencias una vez realizadas pruebas locales.
-- [ ] Añadir un proyecto integrador que conecte interfaz gráfica, JSON y visualización.
-- [ ] Mantener comunicación serial con Arduino como una ruta opcional, no como requisito para aprender Python.
+- [x] Añadir pruebas de humo de los ejemplos de las 12 sesiones.
+- [x] Ampliar las pruebas de lógica, persistencia, entradas inválidas y generación de archivos.
+- [x] Actualizar README, catálogo de proyectos y documentación de auditoría.
+- [ ] Confirmar la ejecución de GitHub Actions para esta revisión.
+- [ ] Completar el checklist manual de Windows incluido en `AUDITORIA_DIDACTICA_Y_TECNICA.md`.
+- [ ] Actualizar este plan y el informe con los resultados reales de las pruebas manuales.
 
-## Criterios para marcar un proyecto como verificado
+## Criterios para declarar un proyecto verificado
 
-Un proyecto solo se marcará como verificado cuando:
-1. el código se haya ejecutado en el entorno indicado;
-2. se haya probado el flujo principal;
-3. se hayan probado al menos los casos de error relevantes;
-4. las instrucciones de instalación y ejecución coincidan con lo observado;
-5. las salidas generadas se hayan revisado;
-6. cualquier limitación conocida quede documentada.
+1. El código se ejecuta en el entorno documentado.
+2. Se prueba el flujo principal.
+3. Se prueban los casos de error relevantes.
+4. Las instrucciones de instalación y ejecución coinciden con el comportamiento observado.
+5. Se revisan los archivos generados o la interfaz visual.
+6. Se documentan limitaciones y riesgos conocidos.
 
-La comprobación automática de sintaxis y las pruebas unitarias no demuestran que una interfaz se vea correctamente ni que un juego, una aplicación web o una biblioteca externa funcione en el equipo del estudiante.
+La compilación de sintaxis y las pruebas unitarias son evidencia útil, pero no sustituyen la validación de escritorio, el navegador ni la interacción con hardware.
