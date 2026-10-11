@@ -31,6 +31,13 @@ class PruebasReporteCsv(unittest.TestCase):
             with self.assertRaises(ValueError):
                 reporte_csv.leer_puntajes(ruta)
 
+    def test_omite_valores_no_finitos(self):
+        with tempfile.TemporaryDirectory() as temporal:
+            ruta = Path(temporal) / "mediciones.csv"
+            ruta.write_text("estudiante,puntaje\nA,4.5\nB,nan\nC,inf\n", encoding="utf-8")
+            puntajes = reporte_csv.leer_puntajes(ruta)
+            self.assertEqual(puntajes, [4.5])
+
 
 class PruebasLogicaCalculadora(unittest.TestCase):
     def test_operaciones_basicas(self):
@@ -40,12 +47,14 @@ class PruebasLogicaCalculadora(unittest.TestCase):
         self.assertEqual(calcular(8, 2, "×"), 16)
         self.assertEqual(calcular(8, 2, "÷"), 4)
 
-    def test_division_por_cero_y_operacion_desconocida(self):
+    def test_division_por_cero_operacion_desconocida_y_no_finitos(self):
         calcular = calculadora_customtkinter.calcular_operacion
         with self.assertRaises(ZeroDivisionError):
             calcular(8, 0, "÷")
         with self.assertRaises(ValueError):
             calcular(8, 2, "desconocida")
+        with self.assertRaises(ValueError):
+            calcular(float("nan"), 2, "+")
 
 
 class PruebasPersistenciaFormulario(unittest.TestCase):
