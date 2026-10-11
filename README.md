@@ -64,6 +64,9 @@ Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en ord
 - [Sesión 7: Ciclos](sesiones/07-ciclos/README.md)
 - [Sesión 8: Cadenas y colecciones](sesiones/08-cadenas-y-colecciones/README.md)
 - [Sesión 9: Funciones](sesiones/09-funciones/README.md)
+- [Sesión 10: Archivos y datos](sesiones/10-archivos-y-datos/README.md)
+- [Sesión 11: Errores y excepciones](sesiones/11-errores-y-excepciones/README.md)
+- [Sesión 12: Mini proyecto de preguntas](sesiones/12-mini-proyecto-preguntas/README.md)
 
 ## Entorno recomendado
 
