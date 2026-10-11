@@ -90,3 +90,12 @@ Solicita dos números enteros, conviértelos con `int()` y muestra la suma. Prue
 ## Próxima sesión
 
 **Operadores:** usar los datos para calcular y comparar resultados.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Convierte la ficha en un programa interactivo. Solicita el nombre de la actividad, el área y la cantidad de materiales. Recuerda que `input()` devuelve texto; convierte la cantidad con `int()` cuando corresponda.
+
+**Criterio de revisión:** los datos que escribe la persona aparecen en el resumen final y la cantidad se guarda como número.
+
+**Evidencia:** ejecuta el programa dos veces con datos diferentes. En esta sesión todavía no es obligatorio manejar entradas inválidas; eso se abordará en sesiones posteriores.
