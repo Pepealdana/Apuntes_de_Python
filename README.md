@@ -74,7 +74,7 @@ Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en ord
 - Visual Studio Code
 - Extensión oficial de Python para VS Code
 
-Las sesiones iniciales no requieren bibliotecas externas. Cada nueva herramienta tendrá instrucciones de instalación y un ejemplo pequeño antes de convertirse en requisito.
+Las sesiones iniciales no requieren bibliotecas externas. Cada nueva herramienta tendrá instrucciones de instalación y un ejemplo pequeño antes de convertirse en requisito. Un flujo de GitHub Actions comprueba automáticamente la sintaxis de los scripts de las sesiones cuando cambian archivos Python.
 
 ## Referencias iniciales
 
