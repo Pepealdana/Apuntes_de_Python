@@ -67,7 +67,7 @@ Ejecuta [07_ciclos.py](ejemplos/07_ciclos.py). Predice el total antes de ejecuta
 1. Cambia el límite de `range(1, 6)`.
 2. Prueba `range(0, 11, 2)`.
 3. Cambia el valor inicial y la condición del `while`.
-4. Quita temporalmente `contador += 1) y explica el riesgo. No dejes un ciclo infinito ejecutándose.
+4. Quita temporalmente `contador += 1` y explica el riesgo. No dejes un ciclo infinito ejecutándose.
 
 ## 4. Retos
 
