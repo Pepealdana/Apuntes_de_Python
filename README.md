@@ -70,17 +70,19 @@ Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en ord
 - [Sesión 11: Errores y excepciones](sesiones/11-errores-y-excepciones/README.md)
 - [Sesión 12: Mini proyecto de preguntas](sesiones/12-mini-proyecto-preguntas/README.md)
 
-## Primeros proyectos aplicados
+## Proyectos prácticos
 
-Los ejemplos iniciales están en [Proyectos prácticos](proyectos/README.md):
+El repositorio ahora incluye proyectos iniciales y versiones más completas en varias áreas. Consulta el [catálogo de proyectos](proyectos/README.md) para ver dependencias, instrucciones y retos.
 
-- Tkinter: primera ventana, sin biblioteca externa adicional cuando Tkinter está disponible.
-- CustomTkinter: primera aplicación moderna, requiere instalación.
-- Pygame: mover un objeto con las flechas, requiere instalación.
-- Automatización: resumen de un archivo CSV usando la biblioteca estándar.
-- Datos: gráfica con Matplotlib, requiere instalación.
+- **Interfaces:** calculadora con CustomTkinter, formulario con CSV y gestor de actividades con JSON.
+- **Juegos:** movimiento inicial y juego de recolección con colisiones, puntuación, vidas y reinicio mediante Pygame.
+- **Automatización y datos:** organizador de archivos con modo simulación, informe CSV validado y gráfica de mediciones.
+- **Web:** lista de tareas local con Flask y persistencia JSON.
+- **Imágenes:** redimensionamiento de copias con Pillow.
+- **Ciencia:** simulación ideal de proyectil con CSV y gráfica.
+- **IA:** experimento de clasificación Iris con scikit-learn.
 
-Son puntos de partida para aprender. No se consideran probados en todos los sistemas hasta registrar una ejecución real.
+Los proyectos están incorporados en el repositorio, pero no todos han sido ejecutados en un entorno gráfico real. El plan de implementación diferencia explícitamente el código disponible de las pruebas que faltan.
 
 ## Entorno recomendado
 
