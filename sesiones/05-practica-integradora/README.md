@@ -52,6 +52,13 @@ No uses una sola variable para representar cantidades diferentes.
 
 Solicita por teclado el nombre del personaje y muestra la historia con ese nombre. Si lo necesitas, vuelve a consultar la sesión de entrada con `input()`.
 
+## Errores frecuentes y diagnóstico
+
+- **Los valores no se incorporan a la historia:** revisa si estás usando la variable o escribiendo su nombre como texto.
+- **El cálculo no coincide con la predicción:** verifica el orden de las operaciones y los valores de entrada.
+- **La salida es difícil de leer:** separa el cálculo de la presentación y usa cadenas f.
+- **El programa falla al ejecutar:** lee la última línea del mensaje de error y comprueba primero la sintaxis y los nombres de variables.
+
 ## 5. Cierre
 
 - ¿Qué bug se produjo al modificar la variable del total?
