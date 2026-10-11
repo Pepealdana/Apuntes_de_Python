@@ -34,13 +34,15 @@ Cada módulo tendrá, según lo que necesite, propósito, conceptos, preparació
 
 No es necesario terminar toda la ruta común antes de explorar un campo de aplicación. Los proyectos volverán a los fundamentos cuando lo necesiten.
 
+Consulta la [ruta general de aprendizaje](RUTA_GENERAL.md) para ver las etapas y la secuencia recomendada.
+
 ## Campos de aplicación
 
 - **Consola y lógica:** calculadoras, cuestionarios, conversores y juegos de texto.
-- **Interfaces gráficas:** Tkinter y, más adelante, CustomTkinter.
+- **Interfaces gráficas:** Tkinter y CustomTkinter.
 - **Juegos:** Turtle para comenzar y Pygame para juegos 2D.
 - **Web y APIs:** fundamentos de HTTP, JSON, Flask y FastAPI.
-- **Datos y gráficas:** módulos estándar, Matplotlib y, cuando sea útil, pandas.
+- **Datos y gráficas:** módulos estándar, Matplotlib y, cuando aporte valor, pandas.
 - **Automatización:** organización de archivos, procesamiento de información y generación de reportes.
 - **Imágenes y multimedia:** Pillow y proyectos sencillos de edición de imágenes.
 - **Ciencia y cálculo:** matemáticas, estadísticas y visualización de fenómenos.
@@ -49,9 +51,9 @@ No es necesario terminar toda la ruta común antes de explorar un campo de aplic
 
 La incorporación de bibliotecas será gradual: no se instalarán todas al comienzo. Se priorizarán herramientas gratuitas y ejemplos que puedan ejecutarse en equipos modestos.
 
-Consulta el [Mapa de posibilidades de Python](MAPA_DE_POSIBILIDADES.md) para ver el alcance previsto, las herramientas posibles y la secuencia de incorporación.
+Consulta el [Mapa de posibilidades de Python](MAPA_DE_POSIBILIDADES.md) para ver las herramientas previstas y el [catálogo de rutas](rutas/README.md) para comenzar un área aplicada.
 
-## Sesiones
+## Sesiones de fundamentos
 
 Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en orden.
 
@@ -68,21 +70,40 @@ Consulta el [índice de sesiones](sesiones/README.md) para seguir la ruta en ord
 - [Sesión 11: Errores y excepciones](sesiones/11-errores-y-excepciones/README.md)
 - [Sesión 12: Mini proyecto de preguntas](sesiones/12-mini-proyecto-preguntas/README.md)
 
+## Primeros proyectos aplicados
+
+Los ejemplos iniciales están en [Proyectos prácticos](proyectos/README.md):
+
+- Tkinter: primera ventana, sin biblioteca externa adicional cuando Tkinter está disponible.
+- CustomTkinter: primera aplicación moderna, requiere instalación.
+- Pygame: mover un objeto con las flechas, requiere instalación.
+- Automatización: resumen de un archivo CSV usando la biblioteca estándar.
+- Datos: gráfica con Matplotlib, requiere instalación.
+
+Son puntos de partida para aprender. No se consideran probados en todos los sistemas hasta registrar una ejecución real.
+
 ## Entorno recomendado
 
 - Python 3
 - Visual Studio Code
 - Extensión oficial de Python para VS Code
 
-Las sesiones iniciales no requieren bibliotecas externas. Cada nueva herramienta tendrá instrucciones de instalación y un ejemplo pequeño antes de convertirse en requisito. Un flujo de GitHub Actions comprueba automáticamente la sintaxis de los scripts de las sesiones cuando cambian archivos Python.
+Las sesiones iniciales no requieren bibliotecas externas. Cada nueva herramienta tendrá instrucciones de instalación y un ejemplo pequeño antes de convertirse en requisito. GitHub Actions comprueba la sintaxis de los scripts Python incluidos en las carpetas de sesiones y proyectos; esa comprobación no sustituye las pruebas de ejecución.
+
+## Seguimiento
+
+Consulta el [plan de implementación](PLAN_DE_IMPLEMENTACION.md) para distinguir lo incorporado de lo pendiente de probar y ampliar.
 
 ## Referencias iniciales
 
 - [Documentación oficial de Python en español](https://docs.python.org/es/3/)
 - [Tutorial oficial de Python](https://docs.python.org/es/3/tutorial/)
-- [El Libro de Python](https://ellibrodepython.com/)
-- [Retos de programación de MoureDev](https://retosdeprogramacion.com/)
-- [mclibre](https://www.mclibre.org/)
+- [Tkinter — documentación de Python](https://docs.python.org/es/3/library/tkinter.html)
+- [CustomTkinter](https://customtkinter.tomschimansky.com/)
+- [Pygame](https://www.pygame.org/docs/)
+- [Matplotlib](https://matplotlib.org/stable/)
+- [Flask](https://flask.palletsprojects.com/)
+- [FastAPI](https://fastapi.tiangolo.com/)
 
 ## Autoría y adaptación
 
