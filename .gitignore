@@ -1,0 +1,22 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables y configuración local (no subir secretos)
+.env
+.env.*
+!.env.example
+
+# Herramientas de pruebas y editores
+.pytest_cache/
+.mypy_cache/
+.vscode/
+
+# Archivos generados por el ejemplo de la sesión 10
+salida_sesion10/
