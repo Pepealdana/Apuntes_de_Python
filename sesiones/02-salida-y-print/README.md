@@ -130,3 +130,23 @@ Después ejecuta y compara.
 ## Próxima sesión
 
 **Entrada de datos con `input()`:** permitir que la persona interactúe con el programa.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Retoma el archivo de la sesión 1. Organiza la salida como una ficha legible con títulos, saltos de línea y cadenas f.
+
+Ejemplo de formato esperado (los valores son ficticios):
+
+```text
+ACTIVIDAD: Huerta escolar
+Área: Ciencias
+Materiales: 8
+Estado: En preparación
+```
+
+No copies el ejemplo literalmente: usa las variables que definiste.
+
+**Criterio de revisión:** la salida es legible y usa variables en lugar de repetir manualmente los mismos valores.
+
+**Evidencia:** cambia el nombre de la actividad y comprueba que la ficha se actualiza sin reescribir todos los mensajes.
