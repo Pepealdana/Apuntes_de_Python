@@ -95,3 +95,12 @@ Intenta leer un archivo y gestiona `FileNotFoundError` con un mensaje que indiqu
 ## Próxima sesión
 
 **Mini proyecto de consola:** integrar entradas, condicionales, ciclos, funciones y manejo de errores.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Valida la cantidad, el costo unitario y la estructura de los datos leídos desde JSON. Maneja errores de conversión, archivo inexistente y JSON mal formado con mensajes útiles. Evita un `except` genérico que oculte cualquier problema.
+
+**Criterio de revisión:** una entrada inválida no termina el programa de forma inesperada y los datos dañados no se reemplazan silenciosamente.
+
+**Evidencia:** prueba texto en lugar de un número y un archivo JSON con contenido inválido; describe el mensaje obtenido.
