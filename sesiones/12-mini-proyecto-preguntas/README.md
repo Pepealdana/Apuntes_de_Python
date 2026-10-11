@@ -66,3 +66,12 @@ Explica qué parte fue más sencilla, cuál requirió más depuración y qué ca
 ## Próximas rutas
 
 Después de este proyecto, el repositorio podrá abrir rutas aplicadas: interfaces gráficas, juegos 2D, automatización, visualización de datos y web. Cada ruta reutilizará estos fundamentos.
+
+
+## Práctica acumulativa — Proyecto final: Aula organizada
+
+Como alternativa o extensión al concurso, integra el proyecto acumulativo en una pequeña aplicación de consola: registra actividades, calcula presupuestos, valida entradas, permite consultar el listado y guarda los datos en JSON. Divide la lógica en funciones.
+
+**Criterio de revisión:** el flujo principal funciona, los datos persisten entre ejecuciones, se validan las entradas y las funciones tienen responsabilidades claras.
+
+**Evidencia:** realiza una prueba completa con datos ficticios, muestra el archivo JSON generado y escribe tres mejoras posibles. El concurso de preguntas original se conserva como proyecto integrador de esta sesión.
