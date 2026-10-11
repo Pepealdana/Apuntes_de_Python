@@ -11,7 +11,7 @@
 - **Pendiente de escritorio:** requiere abrir una ventana, interactuar con teclado/ratón o comprobar la presentación en un equipo real.
 - **Pendiente local:** requiere ejecutar el servidor y verificarlo desde un navegador o cliente HTTP fuera del cliente de pruebas de Flask.
 
-No se declara que una interfaz haya sido validada visualmente si no se ha abierto en un escritorio real. La ejecución de GitHub Actions se documentará por separado cuando termine para esta revisión.
+No se declara que una interfaz haya sido validada visualmente si no se ha abierto en un escritorio real. GitHub Actions terminó correctamente en la ejecución [#47](https://github.com/Pepealdana/Apuntes_de_Python/actions/runs/38158313719): compilación de sintaxis correcta y 30 pruebas automatizadas aprobadas, incluida la comprobación de enlaces internos y la ejecución de los 13 ejemplos de las sesiones.
 
 ## 1. Auditoría didáctica de las sesiones
 
