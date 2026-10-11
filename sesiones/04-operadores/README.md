@@ -182,3 +182,12 @@ Reescríbelo con el operador adecuado.
 ## Próxima sesión
 
 **Práctica integradora:** combinar variables, salida, entrada y operadores en un pequeño programa.
+
+
+## Práctica acumulativa — Proyecto: Aula organizada
+
+Añade un presupuesto estimado para los materiales y calcula el costo total a partir de la cantidad y el costo unitario. Incluye al menos una comparación: por ejemplo, si el presupuesto alcanza para cubrir el costo.
+
+**Criterio de revisión:** diferencia los operadores aritméticos de los operadores de comparación y muestra el resultado con un mensaje claro.
+
+**Evidencia:** prueba dos cantidades diferentes y predice el costo antes de ejecutar.
