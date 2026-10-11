@@ -51,6 +51,14 @@ Guarda la puntuación final en un archivo de texto. Reutiliza la sesión 10.
 
 Añade una categoría a cada pregunta y permite filtrar las preguntas que se presentan.
 
+## Errores frecuentes y diagnóstico
+
+- **La puntuación cambia de forma incorrecta:** revisa dónde se incrementa y qué condición considera una respuesta correcta.
+- **Una respuesta en minúscula se marca como incorrecta:** normaliza la entrada con `strip().upper()`.
+- **La opción ingresada no existe:** valida la respuesta antes de comparar.
+- **El programa falla al leer o guardar resultados:** distingue archivo inexistente, contenido inválido y permisos de escritura.
+- **Una función no encuentra una variable:** revisa los parámetros y el alcance de las variables.
+
 ## 5. Criterios de logro
 
 - [ ] El programa presenta las preguntas.
