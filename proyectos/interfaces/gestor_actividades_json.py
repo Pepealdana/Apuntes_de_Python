@@ -3,16 +3,13 @@
 Instalación:
     python -m pip install customtkinter
 
-Los datos se guardan en actividades.json junto a la carpeta desde la que
-se ejecuta el programa. Los registros de ejemplo deben ser ficticios.
+Los datos se guardan en actividades.json en el directorio de trabajo actual.
+Usa datos ficticios al practicar.
 """
-
 import json
 from pathlib import Path
 import tkinter.messagebox as messagebox
-
 import customtkinter as ctk
-
 
 ARCHIVO = Path("actividades.json")
 
@@ -38,14 +35,14 @@ class Gestor(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("Gestor de actividades")
-        self.geometry("680x560")
-        self.minsize(520, 450)
+        self.geometry("680x600")
+        self.minsize(520, 500)
         self.actividades = []
+        self.carga_correcta = True
 
         ctk.CTkLabel(self, text="Actividades escolares", font=ctk.CTkFont(size=24, weight="bold")).pack(pady=(18, 10))
         formulario = ctk.CTkFrame(self)
         formulario.pack(fill="x", padx=18, pady=8)
-
         self.nombre = ctk.CTkEntry(formulario, placeholder_text="Nombre de la actividad")
         self.nombre.pack(fill="x", padx=12, pady=(12, 6))
         self.area = ctk.CTkEntry(formulario, placeholder_text="Área o asignatura")
@@ -56,7 +53,10 @@ class Gestor(ctk.CTk):
         ctk.CTkButton(botones, text="Agregar", command=self.agregar).pack(side="left", padx=4)
         ctk.CTkButton(botones, text="Eliminar seleccionada", fg_color="#9b3b3b", command=self.eliminar).pack(side="left", padx=4)
 
-        self.lista = ctk.CTkTextbox(self, height=220)
+        ctk.CTkLabel(self, text="Selecciona una actividad para eliminarla:").pack(pady=(12, 4))
+        self.seleccion = ctk.CTkOptionMenu(self, values=["Sin actividades"])
+        self.seleccion.pack(pady=4)
+        self.lista = ctk.CTkTextbox(self, height=190)
         self.lista.pack(fill="both", expand=True, padx=18, pady=8)
         self.estado = ctk.CTkLabel(self, text="")
         self.estado.pack(pady=(0, 12))
@@ -65,39 +65,51 @@ class Gestor(ctk.CTk):
             self.actividades = cargar_actividades()
             self.refrescar()
         except (OSError, json.JSONDecodeError, ValueError) as error:
-            self.estado.configure(text=f"No se pudo leer {ARCHIVO}: {error}")
+            self.carga_correcta = False
+            self.estado.configure(text=f"No se pudo leer {ARCHIVO}: {error}. Corrige el archivo antes de guardar cambios.")
 
     def refrescar(self):
         self.lista.configure(state="normal")
         self.lista.delete("1.0", "end")
+        opciones = []
         for indice, item in enumerate(self.actividades, start=1):
-            self.lista.insert("end", f"{indice}. {item.get('nombre', '(sin nombre)')} — {item.get('area', '(sin área)')}\n")
+            nombre = str(item.get("nombre", "(sin nombre)"))
+            area = str(item.get("area", "(sin área)"))
+            self.lista.insert("end", f"{indice}. {nombre} — {area}\n")
+            opciones.append(f"{indice}. {nombre}")
         self.lista.configure(state="disabled")
+        self.seleccion.configure(values=opciones or ["Sin actividades"])
+        if opciones:
+            self.seleccion.set(opciones[0])
         self.estado.configure(text=f"{len(self.actividades)} actividad(es). Archivo: {ARCHIVO.resolve()}")
 
     def agregar(self):
+        if not self.carga_correcta:
+            self.estado.configure(text="No se guardarán cambios mientras el JSON inicial tenga errores.")
+            return
         nombre = self.nombre.get().strip()
         area = self.area.get().strip()
         if not nombre or not area:
             self.estado.configure(text="Escribe el nombre y el área.")
             return
         self.actividades.append({"nombre": nombre, "area": area})
-        self.persistir()
-        self.nombre.delete(0, "end")
-        self.area.delete(0, "end")
+        if self.persistir():
+            self.nombre.delete(0, "end")
+            self.area.delete(0, "end")
 
     def eliminar(self):
-        seleccion = self.lista.tag_ranges("sel")
-        if not seleccion:
-            self.estado.configure(text="Selecciona el texto de una actividad antes de eliminar.")
+        if not self.carga_correcta or not self.actividades:
+            self.estado.configure(text="No hay una lista válida para modificar.")
             return
-        texto = self.lista.get(seleccion[0], seleccion[1]).strip()
         try:
-            indice = int(texto.split(".", 1)[0]) - 1
+            indice = int(self.seleccion.get().split(".", 1)[0]) - 1
             if not 0 <= indice < len(self.actividades):
                 raise ValueError
         except (ValueError, IndexError):
-            self.estado.configure(text="Selecciona una línea que comience con el número de la actividad.")
+            self.estado.configure(text="Selecciona una actividad válida.")
+            return
+        nombre = self.actividades[indice].get("nombre", "(sin nombre)")
+        if not messagebox.askyesno("Confirmar eliminación", f"¿Eliminar la actividad «{nombre}»?"):
             return
         self.actividades.pop(indice)
         self.persistir()
@@ -107,8 +119,9 @@ class Gestor(ctk.CTk):
             guardar_actividades(self.actividades)
         except OSError as error:
             self.estado.configure(text=f"No se pudo guardar el archivo: {error}")
-            return
+            return False
         self.refrescar()
+        return True
 
 
 if __name__ == "__main__":
