@@ -12,6 +12,10 @@ Los proyectos de esta carpeta son puntos de partida ejecutables para experimenta
 | [Reporte CSV](automatizacion/reporte_csv.py) | Python estándar | Lectura de CSV, validación y resumen |
 | [Gráfica de datos](datos/grafica_datos.py) | Instalar `matplotlib` | Leer datos y producir una gráfica |
 
+## Preparación del entorno
+
+Antes de instalar bibliotecas externas, sigue la [guía de entorno virtual e instalación](../GUIA_ENTORNO.md). Instala únicamente las dependencias del proyecto que vayas a ejecutar.
+
 ## Cómo ejecutar
 
 1. Abre la carpeta del proyecto en Visual Studio Code.
